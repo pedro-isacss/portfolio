@@ -1,6 +1,6 @@
 {
   "name": "static-job-listings-master",
-  "homepage": "https://pedro-isacss.github.io/static-job-listings-master/",
+  "homepage": "https://pedro-isacss.github.io/portfolio/frontend/static-job-listings-master/build",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
