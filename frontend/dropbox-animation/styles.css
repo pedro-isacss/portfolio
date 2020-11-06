@@ -1,0 +1,89 @@
+:root {
+  --primary: rgb(0, 0, 71);
+  --secondary: #7ebcf0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--primary);
+  animation-name: container;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+
+canvas {
+  width: 80px;
+  height: 51px;
+  background-color: var(--secondary);
+  transform: rotate3d(1.2, 1, 1, -80deg);
+  animation-name: box;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+
+.box1 canvas {
+  width: 80px;
+  height: 50px;
+  margin: -7px -2px;
+}
+
+.box2 canvas {
+  margin: -8px -3px;
+}
+
+#absolute {
+  position: absolute;
+  margin-top: 42px;
+  margin-left: 1.5px;
+}
+
+.name {
+  position: absolute;
+  margin-top: 180px;
+  font-size: 24px;
+  font-family: sans-serif;
+  color: var(--secondary);
+  animation-name: name;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+
+@keyframes box {
+  0% {
+    background-color: var(--primary);
+    transform: rotate3d(1.2, 1, 1, 80deg);
+  }
+  100% {
+    background-color: var(--secondary);
+    transform: rotate3d(1.2, 1, 1, -80deg);
+  }
+}
+
+@keyframes container {
+  0% {
+    background-color: var(--secondary);
+  }
+  100% {
+    background-color: var(--primary);
+  }
+}
+
+@keyframes name {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
