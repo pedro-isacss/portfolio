@@ -1,3 +1,5 @@
+# Static Job - [View](https://pedro-isacss.github.io/portfolio/frontend/static-job-listings-master/build/index.html)
+
 ![Static Job](https://i.pinimg.com/564x/24/2d/78/242d789b63de40e03b97d6449bb56c7c.jpg)
 
 # About the project
@@ -14,7 +16,4 @@ Run `npm install`
 **OBS:** To start this project you need to have [Node.js](https://nodejs.org/en/) installed on your computer.
 
 # Author
-This challenge was solved by Pedro Isac.
-
-[![Gmail Badge](https://img.shields.io/badge/-ss.pedroisac@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:ss.pedroisac@gmail.com)](mailto:ss.pedroisac@gmail.com)
-[![Instagram Badge](https://img.shields.io/badge/-Instagram-important)](https://www.instagram.com/ss.pedroisac/)
+This challenge was solved by [Pedro Isac](https://linktr.ee/ss.pedroisac).
