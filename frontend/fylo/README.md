@@ -1,4 +1,4 @@
-# Frontend Mentor - Fylo data storage component
+# Frontend Mentor - Fylo data storage component - [View](https://pedro-isacss.github.io/portfolio/frontend/fylo/index.html)
 
 ![Design preview for the Fylo data storage component coding challenge](./design/desktop-preview.jpg)
 
