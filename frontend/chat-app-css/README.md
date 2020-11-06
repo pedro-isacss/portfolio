@@ -1,4 +1,4 @@
-# Frontend Mentor - Chat app CSS illustration
+# Frontend Mentor - Chat app CSS illustration - [View](https://pedro-isacss.github.io/portfolio/frontend/chat-app-css/index.html)
 
 ![Design preview for the Chat app CSS illustration coding challenge](./design/desktop-preview.jpg)
 
