@@ -31,28 +31,28 @@ body {
 
 canvas {
   width: 80px;
-  height: 51px;
+  height: 50px;
   background-color: var(--secondary);
-  transform: rotate3d(1.2, 1, 1, -80deg);
+  transform: rotate3d(1, 1, 1, -75deg);
   animation-name: box;
   animation-duration: 3s;
   animation-iteration-count: 1;
 }
 
 .box1 canvas {
-  width: 80px;
-  height: 50px;
   margin: -7px -2px;
 }
 
 .box2 canvas {
-  margin: -8px -3px;
+  margin: 3px -2px;
 }
 
 #absolute {
+  width: 70px;
+  height: 45px;
   position: absolute;
-  margin-top: 42px;
-  margin-left: 1.5px;
+  margin-top: 43px;
+  margin-left: 0.9px;
 }
 
 .name {
@@ -69,11 +69,11 @@ canvas {
 @keyframes box {
   0% {
     background-color: var(--primary);
-    transform: rotate3d(1.2, 1, 1, 80deg);
+    transform: rotate3d(1, 1, 1, 75deg);
   }
   100% {
     background-color: var(--secondary);
-    transform: rotate3d(1.2, 1, 1, -80deg);
+    transform: rotate3d(1, 1, 1, -75deg);
   }
 }
 
