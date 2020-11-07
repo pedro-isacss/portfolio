@@ -49,10 +49,10 @@ canvas {
 
 #absolute {
   width: 70px;
-  height: 45px;
+  height: 46px;
   position: absolute;
   margin-top: 43px;
-  margin-left: 0.9px;
+  margin-left: 1px;
 }
 
 .name {
