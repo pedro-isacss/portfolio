@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.forms-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  border-right: 1px solid midnightblue;
+  height: 100vh;
+  overflow: auto;
+}
+
+.forms-container form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+}
+
+.forms-container form input {
+  margin: 5px 0;
+  padding: 8px 5px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.forms-container form input[type="submit"] {
+  cursor: pointer;
+  background-color: midnightblue;
+  color: white;
+}
+
+#delete-contact-form input[type="submit"] {
+  background-color: white;
+  color: midnightblue;
+  border: 1px solid midnightblue;
+}
+
+.forms-container hr {
+  width: 90%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 20px 0;
+  border: 0;
+}
+
+.forms-container h2 {
+  text-transform: uppercase;
+}
+
+.forms-container span {
+  color: red;
+  margin: 5px 0 10px 0;
+}
+
+.forms-container #delete-all-form input {
+  background-color: red;
+  color: white;
+}
+
+.container-table {
+  width: 70%;
+  height: 100vh;
+  overflow: auto;
+}
+
+.contact-container {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.contact-container th {
+  text-align: left;
+  background-color: midnightblue;
+  color: wheat;
+}
+
+.contact-container tr:hover {
+  background-color: rgb(181, 181, 212);
+  transition: all 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+
+.contact-container tr {
+  border-bottom: 1px solid rgb(181, 181, 212);
+}
+
+.contact-container tr:nth-child(1) {
+  border-bottom: none;
+}
+
+.contact-container td,
+.contact-container th {
+  padding: 10px;
+  text-align: center;
+}
+
+.have-background {
+  background-color: rgb(149, 149, 238);
+}
+
+.td-contact {
+  display: flex;
+  align-items: center;
+}
+
+.logo-letter {
+  width: 50px;
+  height: 50px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 50%;
+  color: white;
+  margin-right: 10px;
+  font-weight: 800;
+}
