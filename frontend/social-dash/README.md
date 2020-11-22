@@ -13,4 +13,4 @@ Run `npm install`
 **OBS:** To start this project you need to have [Node.js](https://nodejs.org/en/) installed on your computer.
 
 ## Author
-This challenge was solved by [Pedro Isac](https://linktr.ee/ss.pedroisac).
+This challenge was solved by [Pedro Isac](https://pedro-isacss.github.io/).
