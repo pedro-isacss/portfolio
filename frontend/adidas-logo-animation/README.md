@@ -12,4 +12,4 @@ The following technologies were used in the construction of the project:
 - CSS
 
 ## Author
-This project was developed by [Pedro Isac](https://linktr.ee/ss.pedroisac).
+This project was developed by [Pedro Isac](https://pedro-isacss.github.io/).
