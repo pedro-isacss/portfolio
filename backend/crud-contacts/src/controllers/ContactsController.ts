@@ -5,7 +5,7 @@ import db from "../database/connection";
 export default class ContactsController {
   async getContacts(req: Request, res: Response) {
     const contacts = await db("contacts");
-    return res.status(200).json(contacts);
+    return res.json(contacts);
   }
 
   async postContact(req: Request, res: Response) {

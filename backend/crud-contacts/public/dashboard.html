@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pedro Isac | Crud contacts</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <main>
+    <!-- ADD NEW CONTACT -->
+    <section class="forms-container">
+      <h2>Create a new contact</h2>
+      <span>Enter an id to edit an existing one.</span>
+      <form id="new-contact-form">
+        <input type="text" placeholder="User ID" name="id" id="id">
+        <input type="text" placeholder="First name" name="firstName" id="firstName" />
+        <input type="text" placeholder="Last name" name="lastName" id="lastName" />
+        <input type="text" placeholder="E-mail" name="email" id="email" />
+        <input type="text" placeholder="Phone number" name="phone" id="phone" />
+        <input type="text" placeholder="Birthday (yyyy/mm/dd)" name="birthday" id="birthday" />
+        <input type="submit" value="Add contact" />
+      </form>
+      <hr>
+      <h2>Delete a contact</h2>
+      <form id="delete-contact-form">
+        <input placeholder="User ID" type="text" name="id" id="id-delete">
+        <input type="submit" value="Remove contact">
+      </form>
+      <hr>
+      <form id="delete-all-form">
+        <input value="Delete all" type="submit">
+      </form>
+      <button id="logout">
+        Logout
+      </button>
+    </section>
+    <!-- CONTACT LIST -->
+    <section class="container-table">
+      <table class="contact-container">
+        <tr>
+          <th>Contact</th>
+          <th>E-mail</th>
+          <th>Phone</th>
+          <th>Birthday</th>
+          <th>Id</th>
+        </tr>
+      </table>
+    </section>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./scripts.js"></script>
+</body>
+
+</html>

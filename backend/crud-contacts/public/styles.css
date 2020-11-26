@@ -7,8 +7,50 @@
 
 main {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  overflow: auto;
   height: 100vh;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.login-container hr {
+  width: 1px;
+  height: 50%;
+}
+
+.login-container form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 40%;
+  margin: 0 20px;
+}
+
+.login-container form h1 {
+  color: rgb(31, 29, 29);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.login-container form input {
+  margin: 5px 0;
+  padding: 8px 5px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.login-container form input[type="submit"] {
+  cursor: pointer;
+  background-color: midnightblue;
+  color: white;
 }
 
 .forms-container {
@@ -20,6 +62,9 @@ main {
   border-right: 1px solid midnightblue;
   height: 100vh;
   overflow: auto;
+  align-self: center;
+  padding-top: 50px;
+  overflow-wrap: unset;
 }
 
 .forms-container form {
@@ -129,4 +174,13 @@ main {
   color: white;
   margin-right: 10px;
   font-weight: 800;
+}
+
+#logout {
+  padding: 3px;
+  width: 90%;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid red;
+  margin-top: 10px;
 }

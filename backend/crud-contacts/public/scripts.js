@@ -1,6 +1,52 @@
 /* eslint-disable no-undef */
 let contacts = [];
 let numberItem = 0;
+const token = localStorage.getItem("token");
+
+// LOGIN
+$("#login-form").submit(() => {
+  fetch("http://localhost:3000/authenticate", {
+    method: "post",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      email: $("#email").val(),
+      password: $("#password").val(),
+    }),
+  })
+    .then(response => response.json())
+    .then(res => {
+      window.location.href = "http://localhost:3000/dashboard.html";
+      localStorage.setItem("token", res.token);
+    })
+    .catch(error => {
+      console.log(error);
+    });
+});
+
+// NEW USER
+$("#register-form").submit(() => {
+  fetch("http://localhost:3000/newuser", {
+    method: "post",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${token}`,
+    },
+    body: JSON.stringify({
+      email: $("#emailregister").val(),
+      password: $("#passwordregister").val(),
+    }),
+  })
+    .then(response => {
+      console.log(response.json());
+    })
+    .catch(error => {
+      console.log(error);
+    });
+});
 
 // SUBMIT A CONTACT
 $("#new-contact-form").submit(() => {
@@ -9,6 +55,7 @@ $("#new-contact-form").submit(() => {
     fetch("http://localhost:3000/newcontact", {
       method: "post",
       headers: {
+        Authorization: `Bearer ${token}`,
         Accept: "application/json",
         "Content-Type": "application/json",
       },
@@ -28,6 +75,7 @@ $("#new-contact-form").submit(() => {
     fetch("http://localhost:3000/updatecontact", {
       method: "put",
       headers: {
+        Authorization: `Bearer ${token}`,
         Accept: "application/json",
         "Content-Type": "application/json",
       },
@@ -52,6 +100,7 @@ $("#delete-contact-form").submit(() => {
   fetch("http://localhost:3000/deletecontact", {
     method: "delete",
     headers: {
+      Authorization: `Bearer ${token}`,
       Accept: "application/json",
       "Content-Type": "application/json",
     },
@@ -64,6 +113,7 @@ $("#delete-all-form").submit(() => {
   fetch("http://localhost:3000/deleteall", {
     method: "delete",
     headers: {
+      Authorization: `Bearer ${token}`,
       Accept: "application/json",
       "Content-Type": "application/json",
     },
@@ -101,18 +151,40 @@ function createContact(firstname, lastname, email, phone, birthday, id) {
   numberItem += numberItem;
 }
 
-fetch("http://localhost:3000/getcontacts")
-  .then(response => response.json())
-  .then(res => {
-    contacts = res.slice(0).reverse();
-    contacts.map(item =>
-      createContact(
-        item.firstName,
-        item.lastName,
-        item.email,
-        item.phone,
-        item.birthday,
-        item.id,
-      ),
-    );
-  });
+// LOGOUT
+$("#logout").click(() => {
+  localStorage.clear();
+  window.location.href = "http://localhost:3000";
+});
+
+if (
+  window.location.href.indexOf("http://localhost:3000/dashboard.html") !== -1 &&
+  token === null
+) {
+  window.location.replace("http://localhost:3000");
+} else {
+  fetch("http://localhost:3000/getcontacts", {
+    method: "get",
+    headers: {
+      Authorization: `Bearer ${token}`,
+      Accept: "application/json",
+      "Content-Type": "application/json",
+    },
+  })
+    .then(response => response.json())
+    .then(res => {
+      contacts = res.slice(0).reverse();
+      contacts.map(item =>
+        createContact(
+          item.firstName,
+          item.lastName,
+          item.email,
+          item.phone,
+          item.birthday,
+          item.id,
+        ),
+      );
+    });
+}
+
+console.log(token);
