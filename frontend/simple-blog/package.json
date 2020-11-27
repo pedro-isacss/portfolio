@@ -1,6 +1,5 @@
 {
   "name": "simple-blog",
-  "homepage": "https://pedro-isacss.github.io/portfolio/frontend/simple-blog/.next",
   "version": "0.1.0",
   "private": true,
   "scripts": {

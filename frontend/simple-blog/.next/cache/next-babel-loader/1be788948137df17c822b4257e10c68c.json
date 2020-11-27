@@ -1,1 +1,0 @@
-{"ast":null,"code":"import remark from \"remark\";\nimport html from \"remark-html\";\nexport default async function markdownToHtml(markdown) {\n  const result = await remark().use(html).process(markdown);\n  return result.toString();\n}","map":null,"metadata":{},"sourceType":"module"}

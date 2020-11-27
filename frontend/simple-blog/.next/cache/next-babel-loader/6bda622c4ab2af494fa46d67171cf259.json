@@ -1,1 +1,0 @@
-{"ast":null,"code":"import { jsx as _jsx } from \"react/jsx-runtime\";\n\nvar Header = function Header() {\n  return /*#__PURE__*/_jsx(\"header\", {\n    className: \"header-container\",\n    children: /*#__PURE__*/_jsx(\"h1\", {\n      children: \"Simple Blog\"\n    })\n  });\n};\n\nexport default Header;","map":null,"metadata":{},"sourceType":"module"}
