@@ -186,5 +186,3 @@ if (
       );
     });
 }
-
-console.log(token);
