@@ -6,6 +6,7 @@ A simple blog made with Next.js in order to start studying technology.
 
 ## Get started
 run
+
 `npm instal`
 
 `npm run dev`
