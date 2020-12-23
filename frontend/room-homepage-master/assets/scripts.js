@@ -38,14 +38,14 @@ function menuController() {
   const nav = document.getElementById("nav");
   menuIsOpen = !menuIsOpen;
   if (menuIsOpen) {
-    menuImg.src = "../images/icon-close.svg";
+    menuImg.src = "images/icon-close.svg";
     logo.style.display = "none";
     Array.prototype.forEach.call(menuItems, (item) => {
       item.style.display = "block";
     });
     nav.style.background = "white";
   } else {
-    menuImg.src = "../images/icon-hamburger.svg";
+    menuImg.src = "images/icon-hamburger.svg";
     logo.style.display = "block";
     Array.prototype.forEach.call(menuItems, (item) => {
       item.style.display = "none";
