@@ -1,0 +1,328 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap");
+
+:root {
+  --darkGray: hsl(0, 0%, 63%);
+  --veryDarkGray: hsl(0, 0%, 27%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+.row-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70vh;
+  width: 100%;
+}
+
+.nav-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 70%;
+  height: 100%;
+  background-image: url(../images/desktop-image-hero-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left center;
+  animation-name: moveBackground;
+  animation-duration: 15s;
+  animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  animation-iteration-count: infinite;
+  transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
+}
+
+@keyframes moveBackground {
+  0% {
+    background-position: left bottom;
+    background-size: cover 70vh;
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+  }
+  25% {
+    background-position: center center;
+    background-size: cover 73vh;
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+  }
+  50% {
+    background-position: right top;
+    background-size: cover 75vh;
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+  }
+  75% {
+    background-position: center center;
+    background-size: cover 73vh;
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+  }
+  100% {
+    background-position: left bottom;
+    background-size: cover 70vh;
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+  }
+}
+
+.nav-section nav {
+  margin-top: 30px;
+  margin-left: 30px;
+  z-index: 2;
+}
+
+.nav-section nav button {
+  display: none;
+}
+
+.nav-section nav a {
+  color: #fff;
+  margin: 0 15px;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 5px 0;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-section nav a:nth-child(2) {
+  border: none;
+}
+
+.nav-section nav a:hover {
+  border-bottom-color: #fff;
+  transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
+}
+
+.text-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.text-section .section-absolute {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  position: absolute;
+  padding: 0 50px;
+  height: 70vh;
+  width: 30%;
+}
+
+.text-section .section-absolute h1 {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.text-section .section-absolute p {
+  font-size: 12px;
+  color: var(--veryDarkGray);
+  margin: 20px 0;
+  line-height: 22px;
+}
+
+.text-section .section-absolute a {
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  margin-bottom: 50px;
+}
+
+.text-section .section-absolute a:hover {
+  color: var(--darkGray);
+  transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
+}
+
+.text-section .section-absolute .controllers-section {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 30%;
+  background-color: #000;
+}
+
+.text-section .section-absolute .controllers-section button {
+  background-color: #000;
+  border: none;
+  width: 50%;
+  padding: 10px 0;
+  cursor: pointer;
+  outline: none;
+}
+
+.text-section .section-absolute .controllers-section button:hover {
+  background-color: var(--veryDarkGray);
+  transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
+}
+
+.row-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30vh;
+  background-color: #fff;
+}
+
+.row-2 #img1 {
+  height: 30vh;
+  width: 21%;
+  background-image: url(../images/image-about-dark.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.row-2 #img2 {
+  height: 30vh;
+  width: 21%;
+  background-image: url(../images/image-about-light.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.row-2 section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 58%;
+  padding: 0 30px;
+  height: 30vh;
+}
+
+.row-2 section h2 {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-size: 1em;
+}
+
+.row-2 section p {
+  font-size: 12px;
+  color: var(--veryDarkGray);
+  margin-top: 20px;
+  line-height: 22px;
+}
+
+@media (max-width: 1200px) {
+  .nav-section {
+    width: 60%;
+  }
+  .text-section {
+    width: 40%;
+  }
+  .text-section .section-absolute {
+    width: 40%;
+  }
+  .text-section .section-absolute .controllers-section {
+    width: 20%;
+  }
+  .row-2 #img1 {
+    width: 32%;
+  }
+  .row-2 #img2 {
+    width: 32%;
+  }
+  .row-2 section {
+    width: 36%;
+    padding: 20px;
+  }
+  .row-2 section h2 {
+    font-size: 0.8em;
+  }
+  .row-2 section p {
+    font-size: 0.6em;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 990px) {
+  .row-1,
+  .row-2 {
+    flex-direction: column;
+    height: auto;
+  }
+  .nav-section {
+    height: 50vh;
+    width: 100%;
+  }
+  .nav-section nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 30px 20px;
+    margin: 0;
+  }
+  .nav-section nav button {
+    display: block;
+    cursor: pointer;
+  }
+  .nav-section nav a {
+    display: none;
+    margin: 0 5px;
+    font-weight: 600;
+    color: black;
+  }
+  .nav-section nav a:nth-child(2) {
+    padding: 0;
+    margin: 0;
+    display: block;
+  }
+  .nav-section nav button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+  .text-section {
+    height: auto;
+    width: 100%;
+  }
+  .text-section .section-absolute {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 30px 20px;
+  }
+  .text-section .section-absolute h1 {
+    font-size: 1.5em;
+  }
+  .text-section .section-absolute p {
+    margin: 30px 0;
+    font-size: 0.8em;
+    line-height: 28px;
+  }
+  .text-section .section-absolute .controllers-section {
+    top: -50px;
+    height: 50px;
+    left: unset;
+    right: 0;
+  }
+  .row-2 #img1,
+  .row-2 #img2 {
+    width: 100%;
+    height: 30vh;
+  }
+  .row-2 section {
+    height: auto;
+    width: 100%;
+    padding: 30px 20px;
+  }
+  .row-2 section h2 {
+    font-size: 0.9em;
+    letter-spacing: 5px;
+  }
+  .row-2 section p {
+    font-size: 0.8em;
+    line-height: 28px;
+  }
+}
