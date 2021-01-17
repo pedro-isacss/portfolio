@@ -383,40 +383,23 @@ footer {
 .animated {
   animation-name: animated;
   animation-iteration-count: 1;
-  animation-duration: 3s;
+  animation-duration: 2.5s;
 }
 
 @keyframes animated {
   0% {
     transform: translateY(500px);
-    opacity: 0;
   }
 }
 
-#section2 {
-  opacity: 0;
+.animated-up {
+  animation-name: animated-up;
+  animation-iteration-count: 1;
+  animation-duration: 2.5s;
 }
 
-#section3 {
-  opacity: 0;
-}
-
-#section4 {
-  opacity: 0;
-}
-
-#section5 {
-  opacity: 0;
-}
-
-#section6 {
-  opacity: 0;
-}
-
-#section7 {
-  opacity: 0;
-}
-
-#section8 {
-  opacity: 0;
+@keyframes animated-up {
+  0% {
+    transform: translateY(-500px);
+  }
 }
