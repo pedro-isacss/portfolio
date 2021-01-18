@@ -1,3 +1,4 @@
+// Section animation
 const heightWindow = window.innerHeight;
 let position = 0;
 const section1 = document.getElementById("section1");
@@ -42,4 +43,20 @@ window.addEventListener("scroll", function () {
     }
   });
   position = window.pageYOffset;
+});
+
+// Menu
+let isOpen = false;
+const menu = document.getElementById("menu");
+const menuImg = document.getElementById("menu-img");
+const nav = document.getElementById("nav");
+menu.addEventListener("click", function () {
+  isOpen = !isOpen;
+  if (isOpen) {
+    nav.style.display = "flex";
+    menuImg.src = "./images/close.png";
+  } else {
+    nav.style.display = "none";
+    menuImg.src = "./images/menu.png";
+  }
 });

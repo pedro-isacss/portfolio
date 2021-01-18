@@ -18,6 +18,11 @@ html {
   scroll-behavior: smooth;
 }
 
+button {
+  cursor: pointer;
+  outline: none;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -34,6 +39,18 @@ header {
   padding: 0 56px;
   background-color: #fff;
   width: 100%;
+}
+
+.nav-container #menu {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+}
+
+.nav-container #menu img {
+  max-width: 24px;
 }
 
 .nav-container div {
@@ -401,5 +418,163 @@ footer {
 @keyframes animated-up {
   0% {
     transform: translateY(-500px);
+  }
+}
+
+@media (max-width: 1200px) {
+  .nav-container div nav a,
+  .nav-container div nav button {
+    font-size: 14px;
+    margin: 0 16px;
+  }
+}
+
+@media (max-width: 1040px) {
+  .nav-container {
+    justify-content: center;
+    padding: 30px 56px;
+  }
+  .nav-container #logo {
+    position: absolute;
+    left: 56px;
+  }
+  .nav-container #menu {
+    position: absolute;
+    right: 56px;
+  }
+  .nav-container div {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 2px 2px 10px 4px var(--orangeTheme);
+    border-radius: 24px;
+    width: 50%;
+    padding: 24px 0;
+    margin-top: 50%;
+  }
+  .nav-container div nav {
+    flex-direction: column;
+    margin: 0;
+  }
+  .nav-container div nav a,
+  .nav-container div nav button {
+    margin: 8px 0;
+  }
+  .nav-container #menu {
+    display: flex;
+  }
+  .nav-container .cta-new-account,
+  .nav-container .cta-login {
+    width: 200px;
+    padding: 8px;
+    margin: 0;
+  }
+  .nav-container .cta-login {
+    margin: 8px 0;
+  }
+}
+
+@media (max-width: 980px) {
+  .banner-container {
+    background-size: 40%;
+  }
+}
+
+@media (max-width: 810px) {
+  .know-more-container {
+    flex-direction: column-reverse;
+    height: auto;
+    padding: 56px;
+  }
+  .know-more-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 32px;
+  }
+  .know-more-container div a {
+    align-self: flex-end;
+  }
+  .know-more-container img {
+    max-width: 200px;
+  }
+  #section3 {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 750px) {
+  #section7 {
+    flex-direction: column;
+    padding: 56px 0;
+  }
+  #section6 h2 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+    color: var(--orangeTheme);
+    width: 25ch;
+    text-align: center;
+  }
+  footer {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  footer .social {
+    flex-direction: column;
+  }
+  footer hr {
+    width: 100%;
+    margin-top: 24px;
+  }
+  footer .links-footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  footer .links-footer div {
+    align-items: center;
+    justify-content: center;
+    margin: 24px 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .know-more-container div h2 {
+    font-size: 24px;
+  }
+  .know-more-container div a {
+    padding: 4px 24px;
+  }
+  .banner-container {
+    background: none;
+  }
+  #section5,
+  #section6,
+  #section7 {
+    padding: 56px;
+  }
+  #section5 h2,
+  #section6 h2,
+  #section7 h2 {
+    font-size: 24px;
+    line-height: 28px;
+    width: auto;
+  }
+}
+
+@media (max-width: 470px) {
+  .banner-container h1 {
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: 0.18em;
+    color: #ffffff;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 25ch;
+    font-family: "Anton", sans-serif;
   }
 }
