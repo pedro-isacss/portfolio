@@ -397,27 +397,40 @@ footer {
   color: rgb(201, 192, 192);
 }
 
+#section2,
+#section3,
+#section4,
+#section5,
+#section6,
+#section7,
+#section8 {
+  opacity: 0;
+  margin-top: 25vh;
+}
+
 .animated {
   animation-name: animated;
   animation-iteration-count: 1;
-  animation-duration: 2.5s;
+  animation-duration: 1.5s;
 }
 
 @keyframes animated {
   0% {
     transform: translateY(500px);
+    opacity: 0;
   }
 }
 
 .animated-up {
   animation-name: animated-up;
   animation-iteration-count: 1;
-  animation-duration: 2.5s;
+  animation-duration: 1.5s;
 }
 
 @keyframes animated-up {
   0% {
     transform: translateY(-500px);
+    opacity: 0;
   }
 }
 
@@ -553,10 +566,22 @@ footer {
   .banner-container {
     background: none;
   }
+  #section2,
+  #section3,
+  #section4,
   #section5,
   #section6,
-  #section7 {
-    padding: 56px;
+  #section7,
+  #section8 {
+    padding: 56px 24px;
+  }
+  #logo {
+    position: absolute;
+    left: 24px;
+  }
+  #menu {
+    position: absolute;
+    right: 24px;
   }
   #section5 h2,
   #section6 h2,

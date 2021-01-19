@@ -1,6 +1,5 @@
 // Section animation
 const heightWindow = window.innerHeight;
-let position = 0;
 const section1 = document.getElementById("section1");
 const section2 = document.getElementById("section2");
 const section3 = document.getElementById("section3");
@@ -20,29 +19,17 @@ const sections = [
 ];
 window.addEventListener("scroll", function () {
   sections.forEach((section) => {
-    if (window.pageYOffset > position && section !== section1) {
-      if (
-        section.offsetTop >= window.pageYOffset &&
-        section.offsetTop <= window.pageYOffset + heightWindow
-      ) {
-        section.classList.add("animated");
-      } else {
-        section.classList.remove("animated");
-      }
-      console.log("Down");
-    } else if (window.pageYOffset <= position && section !== section8) {
-      if (
-        section.offsetTop + heightWindow >= window.pageYOffset &&
-        section.offsetTop + heightWindow <= window.pageYOffset + heightWindow
-      ) {
-        section.classList.add("animated-up");
-      } else {
-        section.classList.remove("animated-up");
-      }
-      console.log("Up");
+    if (
+      section.offsetTop + heightWindow / 2 >= window.pageYOffset &&
+      section.offsetTop + heightWindow / 2 <= window.pageYOffset + heightWindow
+    ) {
+      section.classList.add("animated");
+      section.style.opacity = 1;
+    } else {
+      section.classList.remove("animated");
+      section.style.opacity = 0;
     }
   });
-  position = window.pageYOffset;
 });
 
 // Menu
