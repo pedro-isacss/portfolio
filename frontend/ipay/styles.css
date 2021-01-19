@@ -566,21 +566,22 @@ footer {
   .banner-container {
     background: none;
   }
+  .banner-container,
   #section2,
   #section3,
   #section4,
   #section5,
   #section6,
   #section7,
-  #section8 {
-    padding: 56px 24px;
+  #section8,
+  .social,
+  .links-footer {
+    padding: 0 24px;
   }
-  #logo {
-    position: absolute;
+  .nav-container a#logo {
     left: 24px;
   }
-  #menu {
-    position: absolute;
+  .nav-container button#menu {
     right: 24px;
   }
   #section5 h2,
@@ -596,5 +597,9 @@ footer {
   .banner-container h1 {
     font-size: 24px;
     line-height: 40px;
+    width: auto;
+  }
+  .banner-container hr {
+    width: 100%;
   }
 }
