@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+
+:root {
+  --darkBlue: hsl(209, 23%, 22%);
+  --veryDarkBlue: hsl(207, 26%, 17%);
+  --veryDarkBlueLight: hsl(200, 15%, 8%);
+  --darkGray: hsl(0, 4%, 77%);
+  --veryLightGray: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
+  --shadow: 1px 1px 8px 0px var(--darkGray);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+button,
+select,
+input {
+  outline: none;
+  cursor: pointer;
+}
