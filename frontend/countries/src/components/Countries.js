@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
+import GlobalStates from "../Context";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
@@ -6,17 +7,18 @@ const Container = styled.div`
   display: grid;
   grid-template-columns: 23% 23% 23% 23%;
   justify-content: space-between;
-  padding: 16px 56px;
-  row-gap: 0.3%;
+  padding: 16px 56px 32px 56px;
+  row-gap: 32px;
+  column-gap: 32px;
 `;
 
 const Card = styled(Link)`
-  max-width: 250px;
   width: 100%;
   box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   color: #000;
   text-decoration: none;
+  padding-bottom: 16px;
 `;
 
 const Flag = styled.img`
@@ -54,19 +56,29 @@ const SpanStrong = styled.span`
 
 function Countries() {
   const [countries, setCountries] = useState([]);
+  const { search, region } = useContext(GlobalStates);
   useEffect(() => {
     fetch("https://restcountries.eu/rest/v2/all")
       .then((response) => response.json())
       .then((res) => {
+        if (search !== "") {
+          res = res.filter(
+            (country) =>
+              country.name.toLowerCase().indexOf(search.toLowerCase()) !== -1
+          );
+        }
+        if (region !== "All regions") {
+          res = res.filter((country) => country.region === region);
+        }
         setCountries(res);
       });
-  }, []);
+  }, [search, region]);
 
   return (
     <Container>
       {countries.map((country) => {
         return (
-          <Card to={"/" + country.name}>
+          <Card to={"/" + country.name} key={country.name}>
             <Flag src={country.flag} alt="Ola" />
             <Infos>
               <Title>{country.name}</Title>

@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import GlobalStates from "../Context";
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -28,17 +29,22 @@ const Select = styled.select`
   background-origin: content-box;
 `;
 
-const Option = styled.option``;
-
 function Search() {
+  const { search, setSearch, region, setRegion } = useContext(GlobalStates);
   return (
     <Container>
-      <Input placeholder="Search for a country..." />
-      <Select placeholder="Selecione um estado">
-        <option>Filter by Region</option>
-        <option>wddwd</option>
-        <option>wddwd</option>
-        <option>wddwd</option>
+      <Input
+        placeholder="Search for a country..."
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+      />
+      <Select value={region} onChange={(e) => setRegion(e.target.value)}>
+        <option value="All regions">All regions</option>
+        <option value="Africa">Africa</option>
+        <option value="Americas">America</option>
+        <option value="Asia">Asia</option>
+        <option value="Europe">Europe</option>
+        <option value="Oceania">Oceania</option>
       </Select>
     </Container>
   );
