@@ -78,7 +78,7 @@ function Countries() {
     <Container>
       {countries.map((country) => {
         return (
-          <Card to={"/" + country.name} key={country.name}>
+          <Card to={"/" + country.alpha2Code} key={country.name}>
             <Flag src={country.flag} alt="Ola" />
             <Infos>
               <Title>{country.name}</Title>

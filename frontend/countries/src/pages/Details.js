@@ -1,14 +1,16 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import Header from "../components/Header";
+import Back from "../components/Back";
+import DetailsCountry from "../components/DetailsCountry";
 
 function Details() {
   const { country } = useParams();
   return (
     <div>
-      <div>
-        <h1>{country}</h1>
-        <h2>Details</h2>
-      </div>
+      <Header />
+      <Back />
+      <DetailsCountry country={country} />
     </div>
   );
 }
