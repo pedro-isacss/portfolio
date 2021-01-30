@@ -146,7 +146,10 @@ function DetailsCountry(props) {
           {dataCountry.borders !== undefined && dataCountry.borders.length !== 0
             ? dataCountry.borders.map((another) => {
                 return (
-                  <AnotherBtn dark={dark} to={"/" + another}>
+                  <AnotherBtn
+                    dark={dark}
+                    to={"/portfolio/frontend/countries/build/" + another}
+                  >
                     {another}
                   </AnotherBtn>
                 );

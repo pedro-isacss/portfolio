@@ -11,8 +11,17 @@ function App() {
       <Context>
         <BrowserRouter>
           <Switch>
-            <Route name="home" path="/" exact component={Home} />
-            <Route name="details" path="/:country" component={Details} />
+            <Route
+              name="home"
+              path="/portfolio/frontend/countries/build/index.html"
+              exact
+              component={Home}
+            />
+            <Route
+              name="details"
+              path="/portfolio/frontend/countries/build/:country"
+              component={Details}
+            />
           </Switch>
         </BrowserRouter>
       </Context>
