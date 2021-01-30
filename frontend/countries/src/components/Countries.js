@@ -10,6 +10,19 @@ const Container = styled.div`
   padding: 16px 56px 32px 56px;
   row-gap: 32px;
   column-gap: 32px;
+  @media (max-width: 1120px) {
+    grid-template-columns: 31% 31% 31%;
+  }
+  @media (max-width: 830px) {
+    grid-template-columns: 48% 48%;
+  }
+  @media (max-width: 600px) {
+    grid-template-columns: 80%;
+    justify-content: center;
+  }
+  @media (max-width: 460px) {
+    grid-template-columns: 100%;
+  }
 `;
 
 const Card = styled(Link)`
@@ -19,6 +32,8 @@ const Card = styled(Link)`
   color: #000;
   text-decoration: none;
   padding-bottom: 16px;
+  background-color: ${(props) =>
+    props.dark ? "var(--darkBlue)" : "transparent"};
 `;
 
 const Flag = styled.img`
@@ -33,6 +48,7 @@ const Infos = styled.div`
   display: flex;
   flex-direction: column;
   padding: 16px 16px 24px 16px;
+  color: ${(props) => (props.dark ? "#fff" : "#000")};
 `;
 
 const Title = styled.h2`
@@ -56,7 +72,8 @@ const SpanStrong = styled.span`
 
 function Countries() {
   const [countries, setCountries] = useState([]);
-  const { search, region } = useContext(GlobalStates);
+  const { search, region, dark } = useContext(GlobalStates);
+
   useEffect(() => {
     fetch("https://restcountries.eu/rest/v2/all")
       .then((response) => response.json())
@@ -78,9 +95,9 @@ function Countries() {
     <Container>
       {countries.map((country) => {
         return (
-          <Card to={"/" + country.alpha2Code} key={country.name}>
+          <Card dark={dark} to={"/" + country.alpha2Code} key={country.name}>
             <Flag src={country.flag} alt="Ola" />
-            <Infos>
+            <Infos dark={dark}>
               <Title>{country.name}</Title>
               <Span>
                 <SpanStrong>Population:</SpanStrong> {country.population}

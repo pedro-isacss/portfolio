@@ -8,6 +8,7 @@
   --veryLightGray: hsl(0, 0%, 98%);
   --white: hsl(0, 0%, 100%);
   --shadow: 1px 1px 8px 0px var(--darkGray);
+  --shadowBlack: 1px 1px 8px 0px var(--veryDarkBlueLight);
 }
 
 * {

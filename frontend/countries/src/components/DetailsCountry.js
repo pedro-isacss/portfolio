@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
+import GlobalStates from "../Context";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
@@ -7,16 +8,31 @@ const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 16px 56px;
+  background-color: ${(props) =>
+    props.dark ? "var(--veryDarkBlue)" : "var(--veryLightGray)"};
+  @media (max-width: 860px) {
+    flex-direction: column;
+    justify-content: center;
+  }
 `;
 
 const InfoContainer = styled.div`
   display: flex;
   flex-direction: column;
   padding: 0 56px;
+  color: ${(props) => (props.dark ? "#fff" : "#000")};
+  @media (max-width: 860px) {
+    padding: 24px 0;
+    align-self: flex-start;
+  }
 `;
 
 const Flag = styled.img`
   max-width: 400px;
+  width: 100%;
+  @media (max-width: 860px) {
+    max-width: 100%;
+  }
 `;
 
 const Span = styled.span`
@@ -32,6 +48,10 @@ const Grid = styled.div`
   grid-template-columns: auto auto;
   column-gap: 56px;
   margin-top: 24px;
+  @media (max-width: 860px) {
+    grid-template-columns: auto;
+    row-gap: 24px;
+  }
 `;
 
 const Column = styled.div`
@@ -42,8 +62,9 @@ const Column = styled.div`
 const AnotherBtn = styled(Link)`
   margin: 8px 8px;
   padding: 4px 16px;
-  box-shadow: var(--shadow);
-  color: #000;
+  box-shadow: ${(props) =>
+    props.dark ? "var(--shadowBlack)" : "var(--shadow)"};
+  color: ${(props) => (props.dark ? "#fff" : "#000")};
   text-decoration: none;
   border-radius: 5px;
 `;
@@ -57,19 +78,19 @@ const AnotherContainer = styled.div`
 
 function DetailsCountry(props) {
   const [dataCountry, setDataCountry] = useState({});
+  const { dark } = useContext(GlobalStates);
 
   useEffect(() => {
     fetch(`https://restcountries.eu/rest/v2/alpha/${props.country}`)
       .then((response) => response.json())
       .then((res) => {
         setDataCountry(res);
-        console.log(res);
       });
   }, [props.country]);
   return (
-    <Container>
+    <Container dark={dark}>
       <Flag src={dataCountry.flag} alt={dataCountry.name} />
-      <InfoContainer>
+      <InfoContainer dark={dark}>
         <h1>{dataCountry.name}</h1>
         <Grid>
           <Column>
@@ -124,7 +145,11 @@ function DetailsCountry(props) {
           <SpanStrong>Border Countries: </SpanStrong>
           {dataCountry.borders !== undefined && dataCountry.borders.length !== 0
             ? dataCountry.borders.map((another) => {
-                return <AnotherBtn to={"/" + another}>{another}</AnotherBtn>;
+                return (
+                  <AnotherBtn dark={dark} to={"/" + another}>
+                    {another}
+                  </AnotherBtn>
+                );
               })
             : " none"}
         </AnotherContainer>
