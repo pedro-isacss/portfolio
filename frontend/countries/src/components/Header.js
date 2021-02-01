@@ -11,6 +11,9 @@ const Container = styled.header`
   border-bottom: ${(props) =>
     props.dark ? "none" : "3px solid rgba(0, 0, 200, 0.1)"};
   background-color: ${(props) => (props.dark ? "var(--darkBlue)" : "#fff")};
+  @media (max-width: 460px) {
+    padding: 16px 32px;
+  }
 `;
 
 const Title = styled.h1`

@@ -11,6 +11,9 @@ const Container = styled.div`
   padding: 24px 56px;
   background-color: ${(props) =>
     props.dark ? "var(--veryDarkBlue)" : "var(--veryLightGray)"};
+  @media (max-width: 460px) {
+    padding: 24px 32px;
+  }
 `;
 
 const BackBtn = styled(Link)`

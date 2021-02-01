@@ -24,6 +24,7 @@ const Container = styled(InfiniteScroll)`
   }
   @media (max-width: 460px) {
     grid-template-columns: 100%;
+    padding: 16px 32px 32px 32px;
   }
 `;
 
@@ -45,6 +46,10 @@ const Flag = styled.img`
   height: 100%;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  @media (max-width: 460px) {
+    max-height: 140px;
+    height: 100%;
+  }
 `;
 
 const Infos = styled.div`

@@ -13,6 +13,9 @@ const Container = styled.div`
     flex-direction: column;
     align-items: flex-start;
   }
+  @media (max-width: 460px) {
+    padding: 24px 32px;
+  }
 `;
 
 const Input = styled.input`
