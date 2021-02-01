@@ -1,12 +1,14 @@
 import React, { useEffect, useState, useContext } from "react";
 import GlobalStates from "../Context";
+import InfiniteScroll from "react-infinite-scroll-component";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-const Container = styled.div`
+const Container = styled(InfiniteScroll)`
   display: grid;
   grid-template-columns: 23% 23% 23% 23%;
   justify-content: space-between;
+  align-items: center;
   padding: 16px 56px 32px 56px;
   row-gap: 32px;
   column-gap: 32px;
@@ -30,6 +32,7 @@ const Card = styled(Link)`
   box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   color: #000;
+  height: 100%;
   text-decoration: none;
   padding-bottom: 16px;
   background-color: ${(props) =>
@@ -72,6 +75,9 @@ const SpanStrong = styled.span`
 
 function Countries() {
   const [countries, setCountries] = useState([]);
+  const [hasMore, setHasMore] = useState(true);
+  const [total, setTotal] = useState(0);
+  const [until, setUntil] = useState(8);
   const { search, region, dark } = useContext(GlobalStates);
 
   useEffect(() => {
@@ -88,12 +94,36 @@ function Countries() {
           res = res.filter((country) => country.region === region);
         }
         setCountries(res);
+        if (total === 0) setTotal(res.length);
       });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [search, region]);
 
+  const more = () => {
+    if (until >= total) {
+      setHasMore(false);
+      return;
+    }
+    setUntil(until + 8);
+  };
+
   return (
-    <Container>
-      {countries.map((country) => {
+    <Container
+      dataLength={until}
+      next={() => more()}
+      hasMore={hasMore}
+      loader={
+        <h4>
+          Loading {until} de {total}
+        </h4>
+      }
+      endMessage={
+        <p style={{ textAlign: "center" }}>
+          <b>That is all😃</b>
+        </p>
+      }
+    >
+      {countries.slice(0, until).map((country) => {
         return (
           <Card
             dark={dark}
