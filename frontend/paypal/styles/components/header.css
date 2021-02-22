@@ -1,0 +1,95 @@
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  max-width: 1128px;
+  background-image: url("../../images/background-banner.svg");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+  background-size: 50%;
+  margin: auto;
+  padding: 0 24px;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  padding: 24px 0;
+  background-color: #fff;
+  z-index: 4;
+  width: 100%;
+}
+
+header nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--black);
+  text-decoration: none;
+  margin-left: 16px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+header nav a:first-child {
+  margin: 0;
+}
+
+header div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 504px;
+}
+
+header div h1 {
+  color: var(--blue);
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 48px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+header div p {
+  margin: 16px 0;
+  color: var(--black);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+header div a {
+  text-decoration: none;
+  border-radius: 8px;
+  text-align: center;
+  width: 100%;
+  max-width: 288px;
+  padding: 12px;
+}
+
+header div #open-account-link {
+  background: var(--gradient);
+  color: #fff;
+  box-shadow: 3px 3px 15px 3px rgba(0, 179, 255, 0.1);
+}
+
+header div #login-link {
+  border: 1px solid var(--blue);
+  margin-top: 24px;
+}
+
+header div h1 span {
+  background: linear-gradient(to top, #003087 -2.72%, #009cde 127.66%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+header #down-btn {
+  position: absolute;
+  bottom: 12px;
+  align-self: center;
+}

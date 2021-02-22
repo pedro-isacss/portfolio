@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600&display=swap");
+@import "./components/header.css";
+@import "./components/foryou.css";
+
+:root {
+  --blue: #003087;
+  --black: #5a5a5a;
+  --gradient: linear-gradient(57.36deg, #003087 -2.72%, #009cde 127.66%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Maven Pro", sans-serif;
+}
