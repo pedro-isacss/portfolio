@@ -33,13 +33,16 @@
 
 .app .app-download div {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
+  width: 100%;
+  max-width: 384px;
+  margin: 16px 0;
 }
 
 .app .app-download div img {
   width: 100%;
-  max-width: 168px;
+  max-width: 182px;
   padding: 0;
 }
 

@@ -1,0 +1,56 @@
+.for-your-business {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1152px;
+  margin: 84px auto 84px auto;
+  box-shadow: 1px 1px 100px 1px rgba(0, 48, 135, 0.15);
+  border-radius: 24px;
+  padding: 40px;
+}
+
+.for-your-business .for-your-business-left h2 {
+  color: var(--blue);
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.for-your-business .for-your-business-left a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--blue);
+  text-decoration: none;
+  margin-top: 12px;
+}
+
+.for-your-business .for-your-business-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.for-your-business .for-your-business-right div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 16px;
+  max-width: 112px;
+  width: 100%;
+  text-align: center;
+  height: 100px;
+}
+
+.for-your-business .for-your-business-right div a {
+  box-shadow: 1px 1px 32px rgba(0, 48, 135, 0.15);
+  border-radius: 12px;
+  padding: 18px;
+}
+
+.for-your-business .for-your-business-right div span {
+  color: var(--black);
+  font-size: 14px;
+  margin-top: 12px;
+}
