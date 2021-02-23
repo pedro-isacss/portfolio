@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600&display=swap");
 @import "./components/header.css";
 @import "./components/foryou.css";
+@import "./components/createaccount.css";
+@import "./components//app.css";
 
 :root {
   --blue: #003087;

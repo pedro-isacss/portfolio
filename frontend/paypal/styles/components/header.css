@@ -4,7 +4,7 @@ header {
   justify-content: center;
   height: 100vh;
   width: 100%;
-  max-width: 1128px;
+  max-width: 1152px;
   background-image: url("../../images/background-banner.svg");
   background-repeat: no-repeat;
   background-position-x: right;
@@ -17,8 +17,10 @@ header {
 header nav {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   position: fixed;
   top: 0px;
+  left: 0;
   padding: 24px 0;
   background-color: #fff;
   z-index: 4;
@@ -31,13 +33,9 @@ header nav a {
   align-items: center;
   color: var(--black);
   text-decoration: none;
-  margin-left: 16px;
+  margin: 0 24px;
   font-weight: 500;
   font-size: 16px;
-}
-
-header nav a:first-child {
-  margin: 0;
 }
 
 header div {

@@ -1,0 +1,73 @@
+.app {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  max-width: 1152px;
+  margin: auto;
+  padding: 24px 0 24px 24px;
+}
+
+.app .app-download {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 384px;
+}
+
+.app .app-download h2 {
+  color: var(--blue);
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.app .app-download p {
+  color: var(--black);
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 12px;
+}
+
+.app .app-download div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.app .app-download div img {
+  width: 100%;
+  max-width: 168px;
+  padding: 0;
+}
+
+.app .app-download #learn-about-app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--black);
+  text-decoration: none;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--black);
+  border-radius: 8px;
+}
+
+.app .app-download #learn-about-app img {
+  margin-right: 8px;
+}
+
+.app .blue-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  background: var(--gradient);
+  height: 70vh;
+  border-radius: 88px 0 0 88px;
+  position: absolute;
+  right: 0;
+}
