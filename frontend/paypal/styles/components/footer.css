@@ -50,3 +50,42 @@ footer .footer-width hr {
 footer .footer-width .footer-bottom span {
   color: var(--black);
 }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 850px) {
+  footer {
+    padding: 84px 24px;
+  }
+  footer .footer-width .footer-top div,
+  footer .footer-width .footer-bottom div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .footer-width .footer-top {
+    flex-direction: column-reverse;
+  }
+  footer .footer-width .footer-top img {
+    max-width: 88px;
+    margin: auto;
+    margin-bottom: 24px;
+  }
+  footer .footer-width .footer-top div a {
+    margin: 12px 0;
+  }
+  footer .footer-width .footer-bottom {
+    flex-direction: column;
+  }
+  footer .footer-width .footer-bottom img {
+    max-width: 88px;
+    margin: auto;
+    margin-bottom: 24px;
+  }
+  footer .footer-width .footer-bottom div a {
+    margin: 12px 0;
+  }
+  footer .footer-width .footer-bottom span {
+    text-align: center;
+    margin-top: 24px;
+  }
+}

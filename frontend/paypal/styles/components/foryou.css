@@ -1,7 +1,7 @@
 .for-you {
   display: flex;
   justify-content: space-between;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   max-width: 1152px;
   margin: auto;
@@ -67,4 +67,30 @@
 .for-you .imgs .for-you-img-absolute {
   position: absolute;
   right: 20%;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 850px) {
+  .for-you {
+    flex-direction: column;
+  }
+  .for-you .imgs {
+    margin: 84px 0;
+  }
+  .for-you .imgs img {
+    max-width: 200px;
+    /* flex-direction: column; */
+  }
+}
+
+@media (max-width: 400px) {
+  .for-you .for-you-infos h2 {
+    font-size: 24px;
+  }
+  .for-you .imgs {
+    align-items: flex-start;
+  }
+  .for-you .imgs .for-you-img-absolute {
+    right: 24px;
+  }
 }

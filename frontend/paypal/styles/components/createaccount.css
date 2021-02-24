@@ -2,7 +2,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   max-width: 1152px;
   margin: auto;
@@ -141,4 +141,32 @@
 .create-account form .login-create-account a {
   color: var(--blue);
   text-decoration: none;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 850px) {
+  .create-account {
+    flex-direction: column;
+    padding: 0;
+  }
+  .create-account .blue-section {
+    position: static;
+    width: 100%;
+  }
+  .create-account form {
+    margin: 84px 0;
+    width: 100%;
+    align-items: center;
+    padding: 0 24px;
+  }
+}
+
+@media (max-width: 400px) {
+  .create-account .blue-section {
+    height: 50vh;
+    border-radius: 0;
+  }
+  .create-account .blue-section h2 {
+    font-size: 24px;
+  }
 }

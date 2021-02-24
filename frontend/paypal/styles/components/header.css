@@ -2,7 +2,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   max-width: 1152px;
   background-image: url("../../images/background-banner.svg");
@@ -25,6 +25,12 @@ header nav {
   background-color: #fff;
   z-index: 4;
   width: 100%;
+}
+
+header nav #menu {
+  border: none;
+  background: transparent;
+  display: none;
 }
 
 header nav a {
@@ -90,4 +96,41 @@ header #down-btn {
   position: absolute;
   bottom: 12px;
   align-self: center;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1000px) {
+  header {
+    background-size: 40%;
+  }
+}
+@media (max-width: 600px) {
+  header {
+    background-image: none;
+  }
+  header nav {
+    justify-content: flex-start;
+    padding: 12px 0;
+  }
+  header nav #menu {
+    margin-left: 24px;
+    display: block;
+  }
+  header nav a {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  header div h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  header div a {
+    width: 100%;
+    max-width: 400px;
+  }
+  header div p {
+    margin: 24px 0;
+  }
 }

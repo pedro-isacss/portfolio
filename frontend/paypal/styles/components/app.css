@@ -2,7 +2,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   max-width: 1152px;
   margin: auto;
@@ -73,4 +73,44 @@
   border-radius: 88px 0 0 88px;
   position: absolute;
   right: 0;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 850px) {
+  .app {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+  .app .blue-section {
+    position: static;
+    width: 100%;
+  }
+  .app .blue-section img {
+    max-width: 70%;
+  }
+  .app .app-download {
+    margin-top: 84px;
+  }
+}
+
+@media (max-width: 400px) {
+  .app .blue-section {
+    height: 50vh;
+    border-radius: 0;
+  }
+  .app .app-download {
+    padding: 0 24px;
+  }
+  .app .app-download h2 {
+    font-size: 24px;
+  }
+  .app .app-download div {
+    justify-content: space-between;
+  }
+  .app .app-download div img {
+    max-width: 130px;
+  }
+  .app .blue-section img {
+    width: 30%;
+  }
 }

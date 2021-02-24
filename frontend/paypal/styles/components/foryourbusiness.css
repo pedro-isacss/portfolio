@@ -1,3 +1,7 @@
+.for-your-business-container {
+  padding: 0 24px;
+}
+
 .for-your-business {
   display: flex;
   justify-content: space-between;
@@ -53,4 +57,34 @@
   color: var(--black);
   font-size: 14px;
   margin-top: 12px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 850px) {
+  .for-your-business {
+    flex-direction: column;
+    padding: 48px 40px;
+  }
+  .for-your-business .for-your-business-left h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+  .for-your-business .for-your-business-right {
+    flex-direction: column;
+  }
+  .for-your-business .for-your-business-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .for-your-business .for-your-business-right {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 64px 32px;
+    margin-top: 24px;
+  }
+  .for-your-business .for-your-business-right div {
+    margin: 0;
+  }
 }
