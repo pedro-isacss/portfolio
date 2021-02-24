@@ -26,7 +26,16 @@
   justify-content: flex-start;
   color: var(--blue);
   text-decoration: none;
-  margin-top: 12px;
+  margin-top: 16px;
+}
+
+.for-your-business .for-your-business-left a img {
+  transition: all 1s ease;
+}
+
+.for-your-business .for-your-business-left a:hover img {
+  transform: translate3d(8px, -8px, 0px);
+  transition: all 1s ease;
 }
 
 .for-your-business .for-your-business-right {
@@ -51,6 +60,13 @@
   box-shadow: 1px 1px 32px rgba(0, 48, 135, 0.15);
   border-radius: 12px;
   padding: 18px;
+  transition: all 1s ease;
+}
+
+.for-your-business .for-your-business-right div a:hover {
+  transform: scale(1.05);
+  border-radius: 50%;
+  transition: all 1s ease;
 }
 
 .for-your-business .for-your-business-right div span {

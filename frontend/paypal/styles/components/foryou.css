@@ -42,10 +42,17 @@
 .for-you .for-you-infos a {
   color: var(--blue);
   text-decoration: none;
+  margin-top: 12px;
 }
 
 .for-you .for-you-infos a img {
   vertical-align: middle;
+  transition: all 1s ease;
+}
+
+.for-you .for-you-infos a:hover img {
+  transform: translate3d(8px, -8px, 0px);
+  transition: all 1s ease;
 }
 
 .for-you .imgs {
@@ -62,11 +69,17 @@
   border-radius: 8px;
   max-width: 240px;
   margin: 8px 0;
+  animation-name: img-up;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
 }
 
 .for-you .imgs .for-you-img-absolute {
   position: absolute;
   right: 20%;
+  animation-name: img-down;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
 }
 
 /* ===== RESPONSIVE ===== */
@@ -92,5 +105,41 @@
   }
   .for-you .imgs .for-you-img-absolute {
     right: 24px;
+  }
+}
+
+@keyframes img-down {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.05);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes img-up {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(0.95);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
   }
 }

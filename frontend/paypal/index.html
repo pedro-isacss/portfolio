@@ -12,18 +12,22 @@
 <body>
   <!-- ===== HEADER ===== -->
   <header>
-    <nav>
+    <nav id="nav">
       <button id="menu">
         <img src="./images/menu.svg" alt="Open/close menu">
       </button>
       <a href="#">For you
-        <img src="./images/down.svg" alt="menu PayPal">
       </a>
       <a href="#">For your business
-        <img src="./images/down.svg" alt="menu PayPal">
       </a>
-      <a href="#">Business support
+      <a href="#" class="drop-menu">Business support
         <img src="./images/down.svg" alt="menu PayPal">
+        <div class="drop-down">
+          <a href="#">Start now</a>
+          <a href="#">Our app</a>
+          <a href="#">Start now</a>
+          <a href="#">Our app</a>
+        </div>
       </a>
     </nav>
     <div>
@@ -33,11 +37,10 @@
         some form, by injected humour, or randomised words which don't look even slightly believable.
       </p>
       <a href="#" id="open-account-link">Open account</a>
-      <a href="#" id="login-link">Log in</a>
+      <a href="#" id="login-link">
+        Log in
+      </a>
     </div>
-    <a href="#for-you" id="down-btn">
-      <img src="./images/down-blue.svg" alt="down Pedro Isac">
-    </a>
   </header>
   <!-- ===== FOR YOU ===== -->
   <section class="for-you" id="for-you">
@@ -185,6 +188,7 @@
       </div>
     </div>
   </footer>
+  <script src="./script/script.js"></script>
 </body>
 
 </html>
