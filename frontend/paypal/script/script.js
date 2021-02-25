@@ -47,10 +47,10 @@ gsap.from(".create-account", {
 });
 
 gsap.from(".create-account input", {
-  scrollTrigger: ".create-account",
+  scrollTrigger: ".create-account input",
   opacity: 0,
+  scale: 0.6,
   duration: 3,
-  scale: 0,
 });
 
 gsap.from(".app", {
@@ -59,18 +59,18 @@ gsap.from(".app", {
   duration: 3,
 });
 
-gsap.from(".app img, app a", {
-  scrollTrigger: ".app",
+gsap.from(".app img", {
+  scrollTrigger: ".app img",
   opacity: 0,
-  scale: 0,
+  scale: 0.5,
   duration: 3,
 });
 
 gsap.from(".for-your-business-container", {
   scrollTrigger: ".for-your-business-container",
   opacity: 0,
-  width: 0,
   duration: 3,
+  y: 300,
 });
 
 gsap.from("footer", {
