@@ -1,0 +1,11 @@
+footer {
+  padding: 48px 0;
+  width: 100%;
+  max-width: 1128px;
+}
+
+footer span {
+  color: var(--themeBlackLight);
+  font-size: 1rem;
+  line-height: 1.5rem;
+}

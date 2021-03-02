@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Gugi&family=Lexend+Deca&display=swap");
+@import "./components/container.css";
+@import "./components/header.css";
+@import "./components//main.css";
+@import "./components/footer.css";
+
+:root {
+  --themeBlackStrong: #363636;
+  --themeBlackLight: #606060;
+  --gradient: linear-gradient(
+    180deg,
+    rgba(96, 96, 96, 0.4) 0%,
+    rgba(196, 196, 196, 0) 100%
+  );
+  --transition: all 0.7s ease-in;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend Deca", sans-serif;
+}

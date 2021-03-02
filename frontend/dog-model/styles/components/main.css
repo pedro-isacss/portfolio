@@ -1,0 +1,107 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1128px;
+}
+
+.main .main-text {
+  width: 100%;
+  max-width: 500px;
+}
+
+.main .main-text h2 {
+  color: var(--themeBlackStrong);
+  font-family: "Gugi", cursive;
+  font-weight: normal;
+  font-size: 3rem;
+}
+
+.main .main-text p {
+  color: var(--themeBlackLight);
+  margin: 24px 0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.main .main-text .contact-link {
+  font-size: 1.2rem;
+  letter-spacing: 0.3em;
+  color: var(--themeBlackLight);
+  text-decoration: none;
+}
+
+.main .main-text .contact-link img {
+  transform: translateX(0px);
+  transition: var(--transition);
+}
+
+.main .main-text .contact-link:hover img {
+  transform: translateX(20px);
+  transition: var(--transition);
+}
+
+.main .main-text .social {
+  margin-top: 24px;
+}
+
+.main .main-text .social a {
+  margin: 0 8px;
+  text-decoration: none;
+}
+
+.main .main-text .social a img {
+  transform: translateY(0px);
+  transition: var(--transition);
+}
+
+.main .main-text .social a:hover img {
+  transform: translateY(3px);
+  transition: var(--transition);
+}
+
+.main .main-text .social a:first-child {
+  margin-left: 0;
+}
+
+.main .main-dogs {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 100px 100px 0px 0px;
+}
+
+.main .main-dogs img {
+  max-width: 200px;
+  z-index: 1;
+}
+
+.main .main-dogs canvas {
+  background: var(--gradient);
+  width: 200px;
+  position: absolute;
+  height: 250px;
+  border-radius: 100px 100px 0px 0px;
+}
+
+.main .main-dogs .controllers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .main-dogs .controllers button {
+  background: #d1d1d1;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  width: 12px;
+  height: 12px;
+  border: none;
+  border-radius: 50%;
+  margin: 0 8px;
+}
+
+.main .main-dogs .controllers .active {
+  background-color: #363636;
+}

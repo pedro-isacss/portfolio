@@ -1,0 +1,35 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1128px;
+  padding: 48px 0;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header h1 {
+  color: var(--themeBlackStrong);
+  font-family: "Gugi", cursive;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--themeBlackStrong);
+  margin: 0 32px;
+  transition: var(--transition);
+}
+
+header nav a:hover {
+  color: var(--themeBlackLight);
+  transition: var(--transition);
+}
+
+header nav a:nth-child(3) {
+  margin-right: 0;
+}
