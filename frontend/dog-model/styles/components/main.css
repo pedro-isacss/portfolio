@@ -30,7 +30,7 @@
   letter-spacing: 0.3em;
   color: var(--themeBlackLight);
   text-decoration: none;
-  transition: var(--transition);
+  transition: opacity 0.7s ease-in;
 }
 
 .main .main-text .contact-link:hover {
@@ -55,7 +55,7 @@
 .main .main-text .social a {
   margin: 0 8px;
   text-decoration: none;
-  transition: var(--transition);
+  transition: opacity 0.7s ease-in;
 }
 
 .main .main-text .social a:hover {
@@ -76,7 +76,7 @@
 }
 
 .main .main-dogs img {
-  max-width: 200px;
+  max-width: 300px;
   z-index: 1;
   animation-name: pass-slid-img;
   animation-duration: 5s;
@@ -86,6 +86,9 @@
 @keyframes pass-slid-img {
   0% {
     transform: translateX(-24px);
+    opacity: 0;
+  }
+  10% {
     opacity: 0;
   }
 }
@@ -131,5 +134,8 @@
   }
   .main .main-dogs {
     margin: 32px 0;
+  }
+  .main .main-dogs img {
+    max-width: 250px;
   }
 }

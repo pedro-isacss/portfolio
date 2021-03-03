@@ -52,12 +52,12 @@ header nav a:nth-child(3) {
     z-index: 10;
   }
   header nav {
-    position: absolute;
-    display: none;
+    position: fixed;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 0;
     width: 100%;
     top: 0;
     left: 0;
@@ -66,8 +66,13 @@ header nav a:nth-child(3) {
     background-size: cover;
     background-position: center center;
     z-index: 5;
+    transition: all 0.7s ease-in;
+    animation-name: menu;
+    animation-duration: 0.7;
+    animation-delay: 2s;
   }
   header nav a {
     margin: 12px 0;
+    display: none;
   }
 } ;

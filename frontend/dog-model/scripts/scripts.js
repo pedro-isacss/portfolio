@@ -10,14 +10,24 @@ const dog = document.getElementById("dog");
 // === Open/Close Menu ===
 menuBtn.addEventListener("click", () => {
   menuIsOpen = !menuIsOpen;
+  const linksMenu = document.querySelectorAll("#nav a");
   const menuImg = document.getElementById("menu-img");
   const nav = document.getElementById("nav");
   if (menuIsOpen) {
     menuImg.src = "./images/close.svg";
-    nav.style.display = "flex";
+    nav.style.height = "100vh";
+    menuBtn.style.position = "fixed";
+    menuBtn.style.right = "24px";
+    linksMenu.forEach((link) => {
+      link.style.display = "block";
+    });
   } else {
     menuImg.src = "./images/menu.svg";
-    nav.style.display = "none";
+    nav.style.height = "0";
+    menuBtn.style.position = "static";
+    linksMenu.forEach((link) => {
+      link.style.display = "none";
+    });
   }
 });
 
@@ -28,8 +38,7 @@ setInterval(() => {
   controllsSlider.forEach((controll, index) => {
     if (index === slidCount) {
       controll.classList.add("active");
-      dog.style.display = "block";
-      dog.src = "./images/dog1.png";
     } else controll.classList.remove("active");
+    dog.src = `./images/dog${slidCount}.png`;
   });
 }, 5000);
