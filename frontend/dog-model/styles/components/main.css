@@ -30,6 +30,12 @@
   letter-spacing: 0.3em;
   color: var(--themeBlackLight);
   text-decoration: none;
+  transition: var(--transition);
+}
+
+.main .main-text .contact-link:hover {
+  opacity: 0.6;
+  transition: var(--transition);
 }
 
 .main .main-text .contact-link img {
@@ -49,15 +55,11 @@
 .main .main-text .social a {
   margin: 0 8px;
   text-decoration: none;
-}
-
-.main .main-text .social a img {
-  transform: translateY(0px);
   transition: var(--transition);
 }
 
-.main .main-text .social a:hover img {
-  transform: translateY(3px);
+.main .main-text .social a:hover {
+  opacity: 0.6;
   transition: var(--transition);
 }
 
@@ -76,6 +78,16 @@
 .main .main-dogs img {
   max-width: 200px;
   z-index: 1;
+  animation-name: pass-slid-img;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pass-slid-img {
+  0% {
+    transform: translateX(-24px);
+    opacity: 0;
+  }
 }
 
 .main .main-dogs canvas {
@@ -104,4 +116,20 @@
 
 .main .main-dogs .controllers .active {
   background-color: #363636;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 550px) {
+  .main {
+    flex-direction: column;
+  }
+  .main .main-text {
+    margin-top: 32px;
+  }
+  .main .main-text h2 {
+    font-size: 2.5rem;
+  }
+  .main .main-dogs {
+    margin: 32px 0;
+  }
 }

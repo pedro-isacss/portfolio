@@ -11,6 +11,17 @@ header a {
   text-decoration: none;
 }
 
+header button {
+  background-color: transparent;
+  border: none;
+  display: none;
+  outline: none;
+}
+
+header button img {
+  max-width: 32px;
+}
+
 header h1 {
   color: var(--themeBlackStrong);
   font-family: "Gugi", cursive;
@@ -22,14 +33,41 @@ header nav a {
   text-decoration: none;
   color: var(--themeBlackStrong);
   margin: 0 32px;
-  transition: var(--transition);
+  transition: opacity 0.7s ease-in;
 }
 
 header nav a:hover {
-  color: var(--themeBlackLight);
-  transition: var(--transition);
+  opacity: 0.6;
+  transition: opacity 0.7s ease-in;
 }
 
 header nav a:nth-child(3) {
   margin-right: 0;
 }
+
+/* === RESPONSIVE === */
+@media (max-width: 550px) {
+  header button {
+    display: block;
+    z-index: 10;
+  }
+  header nav {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: url("../../images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: 5;
+  }
+  header nav a {
+    margin: 12px 0;
+  }
+} ;
