@@ -39,6 +39,6 @@ setInterval(() => {
     if (index === slidCount) {
       controll.classList.add("active");
     } else controll.classList.remove("active");
-    dog.src = `./images/dog${slidCount}.png`;
   });
+  dog.src = `./images/dog${slidCount}.png`;
 }, 5000);
