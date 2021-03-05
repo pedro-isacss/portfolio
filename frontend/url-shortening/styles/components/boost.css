@@ -1,0 +1,30 @@
+.boost {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--darkViolet);
+  background-image: url(../../images/bg-boost-desktop.svg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 56px 24px;
+}
+
+.boost h2 {
+  color: #fff;
+}
+
+.boost a {
+  background-color: var(--cyan);
+  padding: 8px 32px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 200px;
+  margin-top: 24px;
+}
+
+.boost a:hover {
+  opacity: 0.8;
+  transition: all 0.7s ease-in;
+}

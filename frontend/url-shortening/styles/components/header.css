@@ -1,0 +1,113 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1440px;
+  padding: 24px;
+  position: absolute;
+  top: 0;
+}
+
+.header nav .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header nav .links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-left: 32px;
+}
+
+.header nav .links ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.header nav .links ul li a {
+  text-decoration: none;
+  color: var(--grayishViolet);
+  margin: 0 12px;
+}
+
+.header nav .links ul li a:hover {
+  color: var(--veryDarkViolet);
+  transition: all 0.7s ease-in;
+}
+
+.header nav .links div a {
+  text-decoration: none;
+}
+
+.header nav .links div a#login {
+  color: var(--grayishViolet);
+  margin-right: 12px;
+}
+
+.header nav .links div a#signup {
+  background-color: var(--cyan);
+  padding: 8px 16px;
+  border-radius: 300px;
+  color: #fff;
+}
+
+.header nav .links div a#signup:hover {
+  opacity: 0.5;
+  transition: all 0.7s ease-in;
+}
+
+.header .banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  width: 100%;
+  max-width: 1440px;
+}
+
+.header .banner div {
+  width: 100%;
+  max-width: 400px;
+}
+
+.header .banner div h1 {
+  font-size: 3rem;
+  color: var(--veryDarkViolet);
+  line-height: 56px;
+}
+
+.header .banner div p {
+  color: var(--grayishViolet);
+  margin: 12px 0 40px 0;
+}
+
+.header .banner div a {
+  text-decoration: none;
+  color: #fff;
+  background-color: var(--cyan);
+  padding: 12px 24px;
+  border-radius: 200px;
+}
+
+.header .banner div a:hover {
+  opacity: 0.5;
+  transition: all 0.7s ease-in;
+}
+
+.header .banner img {
+  max-height: 400px;
+}

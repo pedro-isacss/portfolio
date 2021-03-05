@@ -1,0 +1,76 @@
+.advanced-statistics {
+  padding: 32px 24px 88px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(233, 233, 233);
+}
+
+.advanced-statistics h2 {
+  color: var(--veryDarkViolet);
+  margin-top: 130px;
+}
+
+.advanced-statistics p {
+  color: rgb(163, 159, 159);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  margin-top: 24px;
+}
+
+.advanced-statistics .cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1440px;
+}
+
+.advanced-statistics .card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 40px 24px;
+  z-index: 3;
+}
+
+.advanced-statistics .card:nth-child(2) {
+  margin: 88px 32px 0 32px;
+}
+
+.advanced-statistics .card:nth-child(3) {
+  margin-top: 176px;
+}
+
+.advanced-statistics .card h3 {
+  margin-top: 24px;
+}
+
+.advanced-statistics .card p {
+  text-align: left;
+}
+
+.advanced-statistics .card .card-img {
+  background-color: var(--darkViolet);
+  position: absolute;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 300px;
+  margin-top: -72px;
+}
+
+.advanced-statistics canvas {
+  background-color: var(--cyan);
+  width: 80%;
+  max-width: 1440px;
+  height: 8px;
+  margin-top: 136px;
+  border-radius: 200px;
+  position: absolute;
+  z-index: 0;
+}

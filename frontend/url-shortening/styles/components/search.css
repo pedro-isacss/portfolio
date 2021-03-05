@@ -1,0 +1,42 @@
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 24px;
+  width: 100%;
+  position: absolute;
+  margin-top: 650px;
+  max-width: 1440px;
+  padding: 24px;
+}
+
+.search div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--darkViolet);
+  width: 100%;
+  border-radius: 24px;
+  padding: 56px;
+  background-image: url(../../images/bg-shorten-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.search div input {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  width: 50%;
+}
+
+.search div button {
+  padding: 12px 36px;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--cyan);
+  color: #fff;
+  font-weight: 700;
+  margin-left: 24px;
+}
