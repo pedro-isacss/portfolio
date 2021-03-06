@@ -5,6 +5,8 @@
   align-items: center;
   flex-direction: column;
   background-color: rgb(233, 233, 233);
+  position: relative;
+  z-index: -1;
 }
 
 .advanced-statistics h2 {
@@ -69,8 +71,35 @@
   width: 80%;
   max-width: 1440px;
   height: 8px;
-  margin-top: 136px;
+  top: 62%;
   border-radius: 200px;
   position: absolute;
   z-index: 0;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 850px) {
+  .advanced-statistics .cards {
+    flex-direction: column;
+    margin-top: 32px;
+  }
+  .advanced-statistics .cards .card {
+    display: flex;
+    flex-direction: column;
+    margin: 32px 0;
+    text-align: center;
+  }
+  .advanced-statistics .card p {
+    text-align: center;
+  }
+  .advanced-statistics .card .card-img {
+    align-self: center;
+  }
+  .advanced-statistics canvas {
+    height: 50%;
+    width: 8px;
+  }
+  .advanced-statistics canvas {
+    top: 30%;
+  }
 }

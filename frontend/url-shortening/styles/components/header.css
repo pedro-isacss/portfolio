@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  position: relative;
 }
 
 .header nav {
@@ -15,6 +16,16 @@
   padding: 24px;
   position: absolute;
   top: 0;
+}
+
+.header nav #menu {
+  border: none;
+  background-color: transparent;
+  display: none;
+}
+
+.header nav .links hr {
+  display: none;
 }
 
 .header nav .logo {
@@ -42,6 +53,7 @@
   text-decoration: none;
   color: var(--grayishViolet);
   margin: 0 12px;
+  font-weight: 700;
 }
 
 .header nav .links ul li a:hover {
@@ -109,5 +121,102 @@
 }
 
 .header .banner img {
-  max-height: 400px;
+  max-width: 700px;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 960px) {
+  .header .banner img {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 880px) {
+  .header .banner img {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 670px) {
+  .header nav #menu {
+    display: block;
+  }
+  .header nav .links {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    background-color: var(--darkViolet);
+    top: 0;
+    padding: 42px;
+    border-radius: 24px;
+    left: 5%;
+    margin: 88px auto;
+    width: 90%;
+  }
+  .header nav .links ul,
+  .header nav .links div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .header nav .links ul li {
+    margin: 12px 0;
+  }
+  .header nav .links ul li:nth-child(1) {
+    margin-top: 0;
+  }
+  .header nav .links ul li a {
+    color: #fff;
+    font-weight: 700;
+  }
+  .header nav .links hr {
+    display: block;
+    width: 100%;
+    background-color: rgba(250, 250, 250, 0.2);
+    border: none;
+    height: 1px;
+    margin: 12px 0;
+  }
+  .header nav .links div a#login {
+    margin: 12px 0;
+  }
+  .header nav .links div a#signup {
+    margin-top: 12px;
+    padding: 8px 40px;
+  }
+  .header .banner {
+    flex-direction: column-reverse;
+  }
+  .header .banner div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .header .banner div h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .header .banner div p {
+    margin: 12px 0 24px 0;
+    text-align: center;
+  }
+  .header {
+    min-height: 115vh;
+  }
+}
+
+@media (max-width: 420px) {
+  .header .banner img {
+    max-width: 300px;
+    margin-bottom: 24px;
+  }
+  .header .banner div {
+    width: 100%;
+  }
+  .header .banner div h1 {
+    font-size: 2rem;
+    line-height: 36px;
+  }
 }

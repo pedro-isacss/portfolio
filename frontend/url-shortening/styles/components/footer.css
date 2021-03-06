@@ -42,3 +42,24 @@ footer .social a {
 footer .social a:nth-child(4) {
   margin-right: 0;
 }
+
+/* === RESPONSIVE === */
+@media (max-width: 720px) {
+  footer section {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer section img {
+    margin-bottom: 24px;
+  }
+  footer section div {
+    align-items: center;
+    margin-top: 40px;
+  }
+  footer section div span {
+    margin-bottom: 8px;
+  }
+  footer section .social {
+    margin-top: 40px;
+  }
+}

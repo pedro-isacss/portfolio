@@ -5,9 +5,8 @@
   padding: 0 24px;
   width: 100%;
   position: absolute;
-  margin-top: 650px;
   max-width: 1440px;
-  padding: 24px;
+  bottom: -80px;
 }
 
 .search div {
@@ -39,4 +38,27 @@
   color: #fff;
   font-weight: 700;
   margin-left: 24px;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 960px) {
+  .search {
+    margin-top: 750px;
+  }
+}
+
+@media (max-width: 520px) {
+  .search div {
+    padding: 32px;
+  }
+  .search div {
+    flex-direction: column;
+  }
+  .search div input {
+    width: 100%;
+  }
+  .search div button {
+    margin: 12px 0 0 0;
+    width: 100%;
+  }
 }

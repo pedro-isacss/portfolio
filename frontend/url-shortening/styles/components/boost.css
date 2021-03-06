@@ -28,3 +28,10 @@
   opacity: 0.8;
   transition: all 0.7s ease-in;
 }
+
+/* === RESPONSIVE === */
+@media (max-width: 360px) {
+  .boost h2 {
+    font-size: 1.2rem;
+  }
+}
