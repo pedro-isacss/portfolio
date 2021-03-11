@@ -1,0 +1,81 @@
+.modern-cell-phone .top-container {
+  background-color: var(--black);
+  padding: 64px 24px;
+  width: 100%;
+}
+
+.modern-cell-phone .top {
+  width: 100%;
+  max-width: 1128px;
+  margin: auto;
+}
+
+.modern-cell-phone .top h2 {
+  color: var(--white);
+  font-size: 2.5rem;
+}
+
+.modern-cell-phone .top p {
+  color: var(--white);
+  width: 100%;
+  max-width: 552px;
+  margin: 16px 0 32px 0;
+}
+
+.modern-cell-phone .top a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.modern-cell-phone .top a img {
+  margin-left: 8px;
+}
+
+.modern-cell-phone .bottom-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--black-light);
+  padding: 64px 24px;
+  width: 100%;
+  position: relative;
+}
+
+.modern-cell-phone .bottom {
+  width: 100%;
+  max-width: 1128px;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+.modern-cell-phone .bottom span {
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 56px;
+}
+
+.modern-cell-phone .bottom span div {
+  background-color: var(--white);
+  width: 56px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-bottom: 8px;
+  box-shadow: var(--shadow);
+}
+
+.modern-cell-phone .bottom-container .bottom .absolute-img {
+  position: absolute;
+  right: 0;
+  top: -200px;
+}

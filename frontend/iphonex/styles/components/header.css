@@ -1,0 +1,102 @@
+header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(../../images/background-header.png);
+}
+
+header .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1128px;
+  position: absolute;
+  top: 24px;
+  padding: 0 24px;
+}
+
+header .nav-container nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .nav-container nav a {
+  margin-right: 24px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+header .nav-container button {
+  background: transparent;
+  border: none;
+}
+
+header .main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1128px;
+  padding: 0 24px;
+}
+
+header .main-header .main-header-left {
+  width: 100%;
+  max-width: 480px;
+}
+
+header .main-header .main-header-left div h1 {
+  color: var(--white);
+  font-family: "Saira Stencil One", cursive;
+  font-size: 3rem;
+  font-weight: 200;
+}
+
+header .main-header .main-header-left p {
+  color: var(--white);
+}
+
+header .main-header .main-header-left .list-description {
+  margin: 24px 0;
+}
+
+header .main-header .main-header-left .list-description span {
+  background-color: var(--black-light);
+  color: var(--white);
+  margin-right: 8px;
+  padding: 4px 16px;
+  border-radius: 8px;
+}
+
+header .main-header .main-header-left .links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .main-header .main-header-left .links a {
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 224px;
+  text-align: center;
+  font-weight: 500;
+}
+
+header .main-header .main-header-left .links a#buy-now {
+  background: var(--gradient);
+  color: var(--black);
+  box-shadow: var(--shadow);
+}
+
+header .main-header .main-header-left .links a#try-it {
+  background: transparent;
+  border: 1px solid var(--white);
+  color: var(--white);
+}

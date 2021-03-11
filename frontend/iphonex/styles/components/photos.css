@@ -1,0 +1,28 @@
+.photos-container {
+  padding: 64px 24px;
+  width: 100%;
+  background: url(../../images/background-photos.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.photos-container .photos {
+  width: 100%;
+  max-width: 1128px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.photos-container .photos div h2 {
+  color: var(--white);
+  font-size: 2.5rem;
+}
+
+.photos-container .photos div p {
+  color: var(--white);
+  width: 100%;
+  max-width: 552px;
+  margin: 16px 0 32px 0;
+}

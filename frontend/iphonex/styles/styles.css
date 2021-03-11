@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500&family=Saira+Stencil+One&display=swap");
+@import "./components/header.css";
+@import "./components/modern.css";
+@import "./components/photos.css";
+
+:root {
+  --black: #000;
+  --black-light: #171717;
+  --white: #fff;
+  --gradient: linear-gradient(
+    88.68deg,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0.46) 98.88%
+  );
+  --shadow: 4px 2px 16px rgba(0, 0, 0, 0.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
+}
