@@ -36,6 +36,10 @@ header .nav-container button {
   border: none;
 }
 
+header .nav-container button#menu-btn {
+  display: none;
+}
+
 header .main-header {
   display: flex;
   justify-content: space-between;
@@ -59,16 +63,20 @@ header .main-header .main-header-left div h1 {
 
 header .main-header .main-header-left p {
   color: var(--white);
+  line-height: 24px;
 }
 
 header .main-header .main-header-left .list-description {
   margin: 24px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 header .main-header .main-header-left .list-description span {
   background-color: var(--black-light);
   color: var(--white);
-  margin-right: 8px;
   padding: 4px 16px;
   border-radius: 8px;
 }
@@ -99,4 +107,68 @@ header .main-header .main-header-left .links a#try-it {
   background: transparent;
   border: 1px solid var(--white);
   color: var(--white);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 810px) {
+  header .main-header {
+    flex-direction: column-reverse;
+  }
+  header .main-header img {
+    max-width: 50%;
+  }
+  header .main-header .main-header-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 660px) {
+  header .nav-container button#search-btn {
+    display: none;
+  }
+  header .nav-container button#menu-btn {
+    display: block;
+    z-index: 1;
+  }
+  .header-nav-links {
+    position: absolute;
+    background-color: var(--black);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    left: 0;
+    top: -24px;
+    height: 100vh;
+  }
+  header .nav-container nav a {
+    margin: 8px 0;
+  }
+}
+
+@media (max-width: 520px) {
+  header .main-header .main-header-left div h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 520px) {
+  header .main-header .main-header-left .links {
+    flex-direction: column;
+  }
+  header .main-header .main-header-left .links a#try-it {
+    margin-top: 16px;
+  }
+  header .main-header .main-header-left .list-description span {
+    margin: 8px;
+  }
+  header .main-header .main-header-left .list-description {
+    justify-content: center;
+    margin: 8px 0;
+  }
 }

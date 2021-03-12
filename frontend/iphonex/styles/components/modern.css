@@ -18,6 +18,7 @@
 .modern-cell-phone .top p {
   color: var(--white);
   width: 100%;
+  line-height: 24px;
   max-width: 552px;
   margin: 16px 0 32px 0;
 }
@@ -78,4 +79,34 @@
   position: absolute;
   right: 0;
   top: -200px;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 810px) {
+  .modern-cell-phone .top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .modern-cell-phone .top a {
+    justify-content: center;
+  }
+  .modern-cell-phone .bottom-container .bottom .absolute-img {
+    display: none;
+  }
+  .modern-cell-phone .bottom {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .modern-cell-phone .bottom span {
+    margin: 32px;
+  }
+}
+
+@media (max-width: 520px) {
+  .modern-cell-phone .top h2 {
+    font-size: 1.8rem;
+  }
 }

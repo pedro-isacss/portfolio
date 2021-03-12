@@ -24,5 +24,23 @@
   color: var(--white);
   width: 100%;
   max-width: 552px;
+  line-height: 24px;
   margin: 16px 0 32px 0;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 810px) {
+  .photos-container .photos {
+    flex-direction: column;
+    text-align: center;
+  }
+  .photos-container .photos img {
+    max-width: 60%;
+  }
+}
+
+@media (max-width: 520px) {
+  .photos-container .photos div h2 {
+    font-size: 1.8rem;
+  }
 }

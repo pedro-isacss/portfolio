@@ -2,6 +2,8 @@
 @import "./components/header.css";
 @import "./components/modern.css";
 @import "./components/photos.css";
+@import "./components/morethan.css";
+@import "./components/footer.css";
 
 :root {
   --black: #000;
