@@ -16,6 +16,7 @@
   align-items: center;
   text-decoration: none;
   margin-left: 88px;
+  color: var(--theme);
 }
 
 .benefits a:nth-child(1) {
