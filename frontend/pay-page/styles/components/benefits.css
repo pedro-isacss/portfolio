@@ -1,0 +1,41 @@
+.benefits {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto 0 auto;
+  padding: 24px;
+  height: 30vh;
+}
+
+.benefits a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin-left: 88px;
+}
+
+.benefits a:nth-child(1) {
+  margin-left: 0;
+}
+
+.benefits a img {
+  margin-bottom: 12px;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 1020px) {
+  .benefits {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 485px) {
+  .benefits a {
+    margin-left: 32px;
+    text-align: center;
+  }
+} ;

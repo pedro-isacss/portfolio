@@ -1,0 +1,128 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto 0 auto;
+  padding: 24px;
+  position: absolute;
+  bottom: 15vh;
+  align-self: center;
+}
+
+.main form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 4px 4px 100px 1px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  max-width: 360px;
+}
+
+.main form h2 {
+  color: var(--theme);
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+
+.main form input[type="text"],
+.main form input[type="email"],
+.main form input[type="password"] {
+  width: 100%;
+  max-width: 312px;
+  margin-top: 16px;
+  border-radius: 8px;
+  border: 1px solid #cacaca;
+  color: #cacaca;
+  padding: 12px 8px;
+}
+
+.main form input[type="submit"] {
+  padding: 12px 8px;
+  color: #fff;
+  width: 100%;
+  max-width: 312px;
+  margin-top: 16px;
+  border-radius: 8px;
+  background: var(--gradient);
+  border: none;
+}
+
+.main form label {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 16px;
+  align-self: flex-start;
+}
+
+.main form label input {
+  margin-right: 8px;
+}
+
+.main form label span {
+  color: #707070;
+  font-size: 12px;
+}
+
+.main form label a {
+  color: var(--theme);
+  text-decoration: none;
+}
+
+.main div h1 {
+  text-align: right;
+  color: #ffffff;
+  text-shadow: 3px 4px 8px rgba(0, 0, 0, 0.25);
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 72px;
+  width: 100%;
+  max-width: 648px;
+}
+
+.main div a {
+  color: #c499ff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-decoration: none;
+  font-size: 24px;
+  margin-top: 24px;
+}
+
+.main div a img {
+  margin-left: 8px;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 1020px) {
+  .main {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+  }
+  .main form {
+    margin-top: 40px;
+  }
+  .main div h1 {
+    text-align: center;
+  }
+  .main div a {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1020px) {
+  .main div h1 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+}
