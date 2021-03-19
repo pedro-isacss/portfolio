@@ -40,7 +40,37 @@ header canvas {
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 415px) {
+  header canvas {
+    height: 70vh;
+  }
+}
+
+@media (max-width: 414px) {
+  header canvas {
+    height: 80vh;
+  }
+}
+
+@media (max-width: 411px) {
+  header canvas {
+    height: 75vh;
+  }
+}
+
+@media (max-width: 375px) {
+  header canvas {
+    height: 75vh;
+  }
+}
+
+@media (max-width: 360px) {
+  header canvas {
+    height: 95vh;
+  }
+}
+
+@media (max-width: 320px) {
   header canvas {
     height: 115vh;
   }
