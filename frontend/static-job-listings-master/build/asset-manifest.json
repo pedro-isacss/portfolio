@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/portfolio/frontend/static-job-listings-master/build/static/css/main.214569da.chunk.css",
-    "main.js": "/portfolio/frontend/static-job-listings-master/build/static/js/main.be7d45aa.chunk.js",
-    "main.js.map": "/portfolio/frontend/static-job-listings-master/build/static/js/main.be7d45aa.chunk.js.map",
-    "runtime-main.js": "/portfolio/frontend/static-job-listings-master/build/static/js/runtime-main.e80fd7e3.js",
-    "runtime-main.js.map": "/portfolio/frontend/static-job-listings-master/build/static/js/runtime-main.e80fd7e3.js.map",
-    "static/js/2.3b6beb7a.chunk.js": "/portfolio/frontend/static-job-listings-master/build/static/js/2.3b6beb7a.chunk.js",
-    "static/js/2.3b6beb7a.chunk.js.map": "/portfolio/frontend/static-job-listings-master/build/static/js/2.3b6beb7a.chunk.js.map",
-    "index.html": "/portfolio/frontend/static-job-listings-master/build/index.html",
-    "precache-manifest.2d4165ba64948b5a4a6d07ff1b695db2.js": "/portfolio/frontend/static-job-listings-master/build/precache-manifest.2d4165ba64948b5a4a6d07ff1b695db2.js",
-    "service-worker.js": "/portfolio/frontend/static-job-listings-master/build/service-worker.js",
-    "static/css/main.214569da.chunk.css.map": "/portfolio/frontend/static-job-listings-master/build/static/css/main.214569da.chunk.css.map",
-    "static/js/2.3b6beb7a.chunk.js.LICENSE.txt": "/portfolio/frontend/static-job-listings-master/build/static/js/2.3b6beb7a.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/portfolio/frontend/static-job-listings-master/build/static/media/bg-header-desktop.6e2f7196.svg"
+    "main.css": "/projects/frontend/static-job-listings-master/build/static/css/main.897a0d6a.chunk.css",
+    "main.js": "/projects/frontend/static-job-listings-master/build/static/js/main.9232a81c.chunk.js",
+    "main.js.map": "/projects/frontend/static-job-listings-master/build/static/js/main.9232a81c.chunk.js.map",
+    "runtime-main.js": "/projects/frontend/static-job-listings-master/build/static/js/runtime-main.b82cc170.js",
+    "runtime-main.js.map": "/projects/frontend/static-job-listings-master/build/static/js/runtime-main.b82cc170.js.map",
+    "static/js/2.3b6beb7a.chunk.js": "/projects/frontend/static-job-listings-master/build/static/js/2.3b6beb7a.chunk.js",
+    "static/js/2.3b6beb7a.chunk.js.map": "/projects/frontend/static-job-listings-master/build/static/js/2.3b6beb7a.chunk.js.map",
+    "index.html": "/projects/frontend/static-job-listings-master/build/index.html",
+    "precache-manifest.4a867060f895c6500a4b56dc7eb83704.js": "/projects/frontend/static-job-listings-master/build/precache-manifest.4a867060f895c6500a4b56dc7eb83704.js",
+    "service-worker.js": "/projects/frontend/static-job-listings-master/build/service-worker.js",
+    "static/css/main.897a0d6a.chunk.css.map": "/projects/frontend/static-job-listings-master/build/static/css/main.897a0d6a.chunk.css.map",
+    "static/js/2.3b6beb7a.chunk.js.LICENSE.txt": "/projects/frontend/static-job-listings-master/build/static/js/2.3b6beb7a.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/projects/frontend/static-job-listings-master/build/static/media/bg-header-desktop.6e2f7196.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.e80fd7e3.js",
+    "static/js/runtime-main.b82cc170.js",
     "static/js/2.3b6beb7a.chunk.js",
-    "static/css/main.214569da.chunk.css",
-    "static/js/main.be7d45aa.chunk.js"
+    "static/css/main.897a0d6a.chunk.css",
+    "static/js/main.9232a81c.chunk.js"
   ]
 }
