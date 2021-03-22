@@ -151,7 +151,7 @@ function DetailsCountry(props) {
                 return (
                   <AnotherBtn
                     dark={dark}
-                    to={"/portfolio/frontend/countries/build/" + another}
+                    to={"/projects/frontend/countries/build/" + another}
                   >
                     {another}
                   </AnotherBtn>

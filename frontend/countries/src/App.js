@@ -13,13 +13,13 @@ function App() {
           <Switch>
             <Route
               name="home"
-              path="/portfolio/frontend/countries/build/index.html"
+              path="/projects/frontend/countries/build/index.html"
               exact
               component={Home}
             />
             <Route
               name="details"
-              path="/portfolio/frontend/countries/build/:country"
+              path="/projects/frontend/countries/build/:country"
               component={Details}
             />
           </Switch>

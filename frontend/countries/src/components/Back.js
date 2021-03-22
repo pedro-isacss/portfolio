@@ -34,7 +34,7 @@ function Back() {
   const { dark } = useContext(GlobalStates);
   return (
     <Container dark={dark}>
-      <BackBtn dark={dark} to="/portfolio/frontend/countries/build/index.html">
+      <BackBtn dark={dark} to="/">
         <BiArrowBack
           size={24}
           color={dark ? "#fff" : "#000"}

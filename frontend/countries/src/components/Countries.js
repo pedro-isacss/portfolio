@@ -132,7 +132,7 @@ function Countries() {
         return (
           <Card
             dark={dark}
-            to={"/portfolio/frontend/countries/build/" + country.alpha2Code}
+            to={"/projects/frontend/countries/build/" + country.alpha2Code}
             key={country.name}
           >
             <Flag src={country.flag} alt="Ola" />
