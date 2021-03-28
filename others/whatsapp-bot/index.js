@@ -12,10 +12,8 @@ client.on("ready", () => {
 });
 
 client.on("message", (message) => {
-  if (message.body === "Andre") {
-    message.reply(
-      "Diz que é fã do Messi, mas tem foto do Cris na galeria do celular..."
-    );
+  if (message.body === "Pedro") {
+    message.reply("Hello Pedro");
   }
 });
 
