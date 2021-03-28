@@ -1,10 +1,6 @@
-<h1 align="center">
-  📔 Crud Contacts
-</h1>
+# 📔 Crud Contacts
 
-<p align="center">
-  <img src="https://i.pinimg.com/564x/32/cc/c7/32ccc7d5fe1aab1fdf644e30eaef4022.jpg">
-</p>
+![CRUD Contacts](https://i.pinimg.com/564x/32/cc/c7/32ccc7d5fe1aab1fdf644e30eaef4022.jpg)
 
 ## 🧱 Technologies used
 
