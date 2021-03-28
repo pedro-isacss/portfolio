@@ -1,15 +1,14 @@
-# Crud Contacts
+<h1 align="center">
+  📔 Crud Contacts</br>
+  <img src="https://i.pinimg.com/564x/32/cc/c7/32ccc7d5fe1aab1fdf644e30eaef4022.jpg">
+</h1>
 
-![Crud contacs](https://i.pinimg.com/564x/32/cc/c7/32ccc7d5fe1aab1fdf644e30eaef4022.jpg)
+<h2 align="center">
+  🧱 Technologies used
+  <p align="center">Node | Express | Knex | SQLite3</p>
+</h2>
 
-## Technologies used
-
-- Node
-- Express
-- Knex
-- Sqlite3
-
-## Schema of a contact
+## 📃 Schema of a contact
 
 - id
 - firstName
@@ -18,7 +17,7 @@
 - phone
 - birthday
 
-## Routes
+## 🚶 Routes
 
 - GET - **/getcontacts**: displays all contacts.
 - POST - **/newcontact**: Creates a new contact by receiving the firstName, lastName, email, phone and birthday by the body of the request.
@@ -28,6 +27,6 @@
 - POST - **/newuser**: Create a new user.
 - POST - **/authenticate**: Checks the password and email and generates a jwt if everything is correct.
 
-## Author
+## 😁 Author
 
-This project was developed by [Pedro Isac](https://pedro-isacss.github.io/).
+This project was developed by [Pedro Isac 🔗](https://pedro-isacss.github.io/).
