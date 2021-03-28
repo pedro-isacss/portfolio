@@ -1,17 +1,16 @@
 # 📔 Crud Contacts
-
 ![CRUD Contacts](https://i.pinimg.com/564x/32/cc/c7/32ccc7d5fe1aab1fdf644e30eaef4022.jpg)
 
-## 🧱 Technologies used
+## ❓ About the project
+An API for managing contacts.
 
+## 🧱 Technologies used
 Node | Express | Knex | SQLite3
 
 ## 📃 Schema of a contact
-
 id | firstName | lastName | email | phone | birthday
 
 ## 🚶 Routes
-
 | Route     | Method         | Description                                                  
 | --------- | -------------- | ---------------------------------------------------------------------------------------------------------------------- |
 | GET       | /getcontacts   | displays all contacts.                                                                                                 |
@@ -23,5 +22,4 @@ id | firstName | lastName | email | phone | birthday
 | POST      | /authenticate  | Checks the password and email and generates a jwt if everything is correct.                                            |
 
 ## 😁 Author
-
 This project was developed by [Pedro Isac 🔗](https://pedro-isacss.github.io/).
