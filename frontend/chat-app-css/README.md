@@ -1,8 +1,8 @@
-# 👟 Adidas logo animation - [View 🔗](https://pedro-isacss.github.io/projects/frontend/adidas-logo-animation/index.html)
-![Adidas logo animation](https://i.pinimg.com/564x/d1/bb/e0/d1bbe082e6c5f3d7502c8c7b762227f9.jpg)
+# Chat App CSS - [View](https://pedro-isacss.github.io/projects/frontend/chat-app-css/index.html)
+![Chat App CSS](./design/desktop-design.jpg)
 
 ## ❓ About the project
-A simple animation with the Adidas logo
+This project is a [challenge](https://www.frontendmentor.io/challenges/chat-app-css-illustration-O5auMkFqY) from the [Frontend Mentor](https://www.frontendmentor.io/).
 
 ## 🧱 Technologies
 HTML | CSS
