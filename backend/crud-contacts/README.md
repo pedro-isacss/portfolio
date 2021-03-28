@@ -1,12 +1,14 @@
 <h1 align="center">
-  📔 Crud Contacts</br>
-  <img src="https://i.pinimg.com/564x/32/cc/c7/32ccc7d5fe1aab1fdf644e30eaef4022.jpg">
+  📔 Crud Contacts
 </h1>
 
-<h2 align="center">
-  🧱 Technologies used
-  <p align="center">Node | Express | Knex | SQLite3</p>
-</h2>
+<p align="center">
+  <img src="https://i.pinimg.com/564x/32/cc/c7/32ccc7d5fe1aab1fdf644e30eaef4022.jpg">
+</p>
+
+## 🧱 Technologies used
+
+Node | Express | Knex | SQLite3
 
 ## 📃 Schema of a contact
 
