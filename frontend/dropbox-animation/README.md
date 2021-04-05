@@ -2,7 +2,7 @@
 ![Dropbox Animation](https://i.pinimg.com/564x/2d/48/40/2d4840e5abf9d6ca2f0b47a85016c2b1.jpg)
 
 ## ❓ About the project
-This project is a [challenge](https://www.frontendmentor.io/challenges/chat-app-css-illustration-O5auMkFqY) from the [Frontend Mentor](https://www.frontendmentor.io/).
+An animation with the Dropbox logo
 
 ## 🧱 Technologies
 HTML | CSS
