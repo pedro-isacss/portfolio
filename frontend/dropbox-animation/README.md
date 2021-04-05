@@ -1,18 +1,11 @@
-# Dropbox animation - [view](https://pedro-isacss.github.io/portfolio/frontend/dropbox-animation/index.html)
-
+# 📁 Dropbox animation - [View 🔗](https://pedro-isacss.github.io/projects/frontend/dropbox-animation/index.html)
 ![Dropbox Animation](https://i.pinimg.com/564x/2d/48/40/2d4840e5abf9d6ca2f0b47a85016c2b1.jpg)
 
-## About the project
+## ❓ About the project
+This project is a [challenge](https://www.frontendmentor.io/challenges/chat-app-css-illustration-O5auMkFqY) from the [Frontend Mentor](https://www.frontendmentor.io/).
 
-This is an animation with the Dropbox logo.
+## 🧱 Technologies
+HTML | CSS
 
-## Technology
-
-The following technologies were used in the construction of the project:
-
-- HTML
-- CSS
-
-## Author
-
-This project was developed by [Pedro Isac](https://pedro-isacss.github.io/)
+## 😁 Author
+This project was developed by [Pedro Isac 🔗](https://pedro-isacss.github.io/).
