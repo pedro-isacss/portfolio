@@ -3,21 +3,23 @@ const JobUtils = require("../utils/jobUtils");
 const Profile = require("../model/Profile");
 
 module.exports = {
-  index(req, res) {
+  async index(req, res) {
+    const profile = await Profile.get();
+    const jobs = await Job.get();
     let statusCount = {
       progress: 0,
       done: 0,
-      total: Job.get().length,
+      total: jobs.length,
     };
     let jobTotalHours = 0;
-    const updatedJobs = Job.get().map((job) => {
+    const updatedJobs = jobs.map((job) => {
       const remainingDays = (job["total-hours"] / job["daily-hours"]).toFixed();
       const createdDate = new Date(job.created_at);
       const dueDay = createdDate.getDate() + Number(remainingDays);
       const dueDate = createdDate.setDate(dueDay);
       const timeDiffInMs = dueDate - Date.now();
       const dayInMs = 1000 * 60 * 60 * 24;
-      const dayDiff = Math.floor(timeDiffInMs / dayInMs);
+      const dayDiff = Math.ceil(timeDiffInMs / dayInMs);
       const status = dayDiff <= 0 ? "done" : "progress";
       statusCount[status] += 1;
       if (status === "progress") jobTotalHours += Number(job["daily-hours"]);
@@ -25,14 +27,14 @@ module.exports = {
         ...job,
         remaining: dayDiff,
         status,
-        budget: JobUtils.calculateBudget(job, Profile.get()["value-hour"]),
+        budget: JobUtils.calculateBudget(job, profile["value-hour"]),
       };
     });
-    const freeHours = Profile.get()["hours-per-day"] - jobTotalHours;
+    const freeHours = profile["hours-per-day"] - jobTotalHours;
 
     return res.render("index", {
       jobs: updatedJobs,
-      profile: Profile.get(),
+      profile: profile,
       statusCount: statusCount,
       freeHours: freeHours,
     });
