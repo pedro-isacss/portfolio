@@ -1,4 +1,4 @@
-# Pong - [View](https://pedro-isacss.github.io/portfolio/frontend/pong/index.html)
+# Pong - [View](https://pedro-isacss.github.io/projects/frontend/pong/index.html)
 A simple game created with JavaScript, HTML and CSS.
 
 <img src="https://i.pinimg.com/564x/4c/94/d3/4c94d37d6940cd5731d1b1499bcf9119.jpg" />
