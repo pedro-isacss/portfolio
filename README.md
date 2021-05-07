@@ -1,4 +1,4 @@
-# Projects | Studies 🤓
+# Study projects 🤓
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/pedro-isacss/projects)
 ![Lines of code](https://img.shields.io/tokei/lines/github/pedro-isacss/projects)
 ![GitHub](https://img.shields.io/github/license/pedro-isacss/projects)
