@@ -3,7 +3,7 @@
 ![Lines of code](https://img.shields.io/tokei/lines/github/pedro-isacss/projects)
 ![GitHub](https://img.shields.io/github/license/pedro-isacss/projects)
 
-Personal study projects.
+Personal projects aiming to improve my skills in different areas of programming.
 
 [Front-end](https://github.com/pedro-isacss/projects/tree/master/frontend) | 
 [Back-end](https://github.com/pedro-isacss/projects/tree/master/backend/) |
