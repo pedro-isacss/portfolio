@@ -8,4 +8,5 @@ Personal projects aiming to improve my skills in different areas of programming.
 [Front-end](https://github.com/pedro-isacss/projects/tree/master/frontend) | 
 [Back-end](https://github.com/pedro-isacss/projects/tree/master/backend/) |
 [Mobile](https://github.com/pedro-isacss/projects/tree/master/mobile) |
+[Logic](https://github.com/pedro-isacss/projects/tree/master/logic) |
 [Others](https://github.com/pedro-isacss/projects/tree/master/others)
