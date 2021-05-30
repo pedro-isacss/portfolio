@@ -1,0 +1,13 @@
+# Staircase
+Challenge: https://www.hackerrank.com/challenges/staircase/problem
+
+## My answer
+```javascript
+function staircase(n) {
+    let count = 1
+    while(count-1 !== n){
+        console.log(" ".repeat(n-count) + "#".repeat(count))
+        count +=1
+    }
+}
+```
